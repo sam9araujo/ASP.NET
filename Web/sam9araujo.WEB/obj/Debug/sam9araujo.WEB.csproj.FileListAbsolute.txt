@@ -1,0 +1,13 @@
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\bin\sam9araujo.WEB.dll.config
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\bin\sam9araujo.WEB.dll
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\bin\sam9araujo.WEB.pdb
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\obj\Debug\sam9araujo.WEB.csprojResolveAssemblyReference.cache
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\obj\Debug\sam9araujo.WEB.dll
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\obj\Debug\sam9araujo.WEB.pdb
+C:\sam9araujo\HelpDesk\HelpDesk\sam9araujo.WEB\sam9araujo.WEB\bin\OpenPop.dll
+C:\Users\costasa\Desktop\sam9araujo.WEB\sam9araujo.WEB\bin\sam9araujo.WEB.dll.config
+C:\Users\costasa\Desktop\sam9araujo.WEB\sam9araujo.WEB\bin\sam9araujo.WEB.dll
+C:\Users\costasa\Desktop\sam9araujo.WEB\sam9araujo.WEB\bin\sam9araujo.WEB.pdb
+C:\Users\costasa\Desktop\sam9araujo.WEB\sam9araujo.WEB\obj\Debug\sam9araujo.WEB.csprojResolveAssemblyReference.cache
+C:\Users\costasa\Desktop\sam9araujo.WEB\sam9araujo.WEB\obj\Debug\sam9araujo.WEB.dll
+C:\Users\costasa\Desktop\sam9araujo.WEB\sam9araujo.WEB\obj\Debug\sam9araujo.WEB.pdb
