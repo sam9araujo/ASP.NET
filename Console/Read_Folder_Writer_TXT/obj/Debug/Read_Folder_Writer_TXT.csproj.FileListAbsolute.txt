@@ -1,1 +1,7 @@
 C:\Users\costasa\Documents\GitHub\NET\Console\Read_Folder_Writer_TXT\Read_Folder_Writer_TXT\bin\Debug\Read_Folder_Writer_TXT.exe.config
+C:\Users\costasa\Documents\GitHub\ASP.NET\Console\Read_Folder_Writer_TXT\bin\Debug\Read_Folder_Writer_TXT.exe.config
+C:\Users\costasa\Documents\GitHub\ASP.NET\Console\Read_Folder_Writer_TXT\bin\Debug\Read_Folder_Writer_TXT.exe
+C:\Users\costasa\Documents\GitHub\ASP.NET\Console\Read_Folder_Writer_TXT\bin\Debug\Read_Folder_Writer_TXT.pdb
+C:\Users\costasa\Documents\GitHub\ASP.NET\Console\Read_Folder_Writer_TXT\obj\Debug\Read_Folder_Writer_TXT.csprojResolveAssemblyReference.cache
+C:\Users\costasa\Documents\GitHub\ASP.NET\Console\Read_Folder_Writer_TXT\obj\Debug\Read_Folder_Writer_TXT.exe
+C:\Users\costasa\Documents\GitHub\ASP.NET\Console\Read_Folder_Writer_TXT\obj\Debug\Read_Folder_Writer_TXT.pdb

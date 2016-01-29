@@ -16,10 +16,8 @@ namespace Read_Folder_Writer_TXT
             StreamWriter sr = new StreamWriter(@"C:\save.txt");
             foreach (FileInfo fileinfo in Arquivos)
             {
-
                 sr.WriteLine(fileinfo.Name);
-
-
+                
             }
         }
     }
