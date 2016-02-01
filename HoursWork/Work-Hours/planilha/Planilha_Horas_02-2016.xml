@@ -1,0 +1,3631 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Frederico Oliveira</Author>
+  <LastAuthor>samanta costa</LastAuthor>
+  <LastPrinted>2010-08-31T13:53:11Z</LastPrinted>
+  <Created>2009-07-01T21:43:14Z</Created>
+  <LastSaved>2016-02-01T14:36:48Z</LastSaved>
+  <Company>EDS: UAF</Company>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9735</WindowHeight>
+  <WindowWidth>24000</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <HidePivotTableFieldList/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+  <DisplayInkNotes>False</DisplayInkNotes>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s18" ss:Name="Currency">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat
+    ss:Format="_(&quot;R$ &quot;* #,##0.00_);_(&quot;R$ &quot;* \(#,##0.00\);_(&quot;R$ &quot;* \-??_);_(@_)"/>
+  </Style>
+  <Style ss:ID="m129945360">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945380">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945152">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="h:mm;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945192">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945212">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945232">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945252">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129944964">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129944984">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945004">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m129945024">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="Short Time"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="dddd"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s94">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s96">
+   <Alignment ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s103">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s109">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="Short Time"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s115">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s116">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s117">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s118">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="mmm/yy"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s119">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="Short Time"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s120">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s121">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s122">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s124">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s129">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="dddd"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s134">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s139">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s144">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s153">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s154">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="h:mm;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s155">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s159">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="d/m/yy;@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s160">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Interior/>
+   <NumberFormat ss:Format="dddd"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s161">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Interior/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s162">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat ss:Format="h:mm;@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s163">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s165" ss:Parent="s18">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat
+    ss:Format="_(&quot;R$ &quot;* #,##0.0_);_(&quot;R$ &quot;* \(#,##0.0\);_(&quot;R$ &quot;* \-??_);_(@_)"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s166">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="dddd"/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s167">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="0"/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s168">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="h:mm;@"/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s169">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s170">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat ss:Format="h:mm;@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s171">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s172">
+   <Protection/>
+  </Style>
+  <Style ss:ID="s173">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s174">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat ss:Format="[$-F400]h:mm:ss\ AM/PM"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s187">
+   <NumberFormat/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s188">
+   <NumberFormat ss:Format="0"/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s189">
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection x:HideFormula="1"/>
+  </Style>
+  <Style ss:ID="s190">
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s210">
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s223">
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s224">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat ss:Format="[h]:mm:ss"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s225">
+   <Interior/>
+   <NumberFormat ss:Format="[h]:mm:ss;@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s226">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#000000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s227">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#000000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s228">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#000000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s229">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#000000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s230">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s231">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s232">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Dash" ss:Weight="1" ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s233">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#333333"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s234">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#000000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s235">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#000000" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s236">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s237">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s238">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s239">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s240">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s241">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s243">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FF0000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s244">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s245">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s246">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s247">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s248">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s249">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s250">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s251">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s252">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s253">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s254">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s255">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s256">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s257">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s258">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="Front" ss:RefersTo="='02-2016'!RC:R[42]C"/>
+ </Names>
+ <Worksheet ss:Name="02-2016">
+  <Names>
+   <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="='02-2016'!#REF!"
+    ss:Hidden="1"/>
+   <NamedRange ss:Name="Criteria" ss:RefersTo="='02-2016'!#REF!"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="67" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="47.25"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="80.25" ss:Span="1"/>
+   <Column ss:Index="4" ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="114"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="242.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="51" ss:Span="1"/>
+   <Column ss:Index="8" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="43.5"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="45.75"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="50.25"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="62.25"/>
+   <Column ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="25.5"/>
+   <Column ss:StyleID="s65" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="27.75"/>
+   <Column ss:StyleID="s65" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="36"/>
+   <Column ss:StyleID="s66" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="43.5"/>
+   <Column ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="110.25"/>
+   <Column ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="113.25"/>
+   <Column ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="72.75"/>
+   <Column ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s62" ss:Width="44.25"/>
+   <Column ss:StyleID="s62" ss:Width="42.75"/>
+   <Column ss:StyleID="s62" ss:Width="55.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="18.75">
+    <Cell ss:MergeAcross="10" ss:StyleID="s68"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.75">
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="6.75">
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s82"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Nome do Profissional:</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Samanta de Araujo Costa</Data></Cell>
+    <Cell ss:MergeAcross="6" ss:StyleID="m129944964"/>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s93"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Perfil do Profissional</Data></Cell>
+    <Cell ss:StyleID="s96"><Data ss:Type="String">Analista de Sistema .NET</Data></Cell>
+    <Cell ss:MergeAcross="6" ss:StyleID="m129944984"><Data ss:Type="String">Total </Data></Cell>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s93"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">Cliente/Proposta</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">HP</Data></Cell>
+    <Cell ss:MergeAcross="6" ss:StyleID="m129945004" ss:Formula="=R[35]C[5]"><Data
+      ss:Type="DateTime">1899-12-31T08:00:00.000</Data></Cell>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s93"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">Gerente Responsavel</Data></Cell>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:MergeAcross="6" ss:StyleID="m129945024"/>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s115"><NamedCell ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"><Data ss:Type="String">Periodo Base</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="DateTime">2016-02-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:Index="14" ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:MergeDown="1" ss:StyleID="s124"><Data ss:Type="String">Dia</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s129"><Data ss:Type="String">Dia&#10;Semana</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s134"><Data ss:Type="String">Frente&#10;Trabalho</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s139"><Data ss:Type="String">Projeto</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s144"><Data ss:Type="String">Descrição da Atividade Desenvolvida</Data><Comment
+      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Face="Tahoma" x:CharSet="1" html:Size="9" html:Color="#000000">Atividades possiveis&#10;02-Gerenciamento Projetos&#10;04-Conversao&#10;06-Treinamento&#10;07-Consultoria&#10;10-Business Requirements&#10;12-Especificacao Funcional&#10;14-EspecificacaoTecnica&#10;16-Programacao&#10;18-Testes&#10;20-Testes Integrados&#10;22-Documentacao&#10;00-Administrativa&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:MergeAcross="5" ss:StyleID="m129945152"><Data ss:Type="String">Horários</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s153"><Data ss:Type="String">Total</Data></Cell>
+    <Cell ss:Index="17"
+     ss:Formula="=IF(Projetos!R[-7]C[-16]&gt;0,Projetos!R[-7]C[-16],&quot;&quot;)"><Data
+      ss:Type="String">OI - Migração - Issuer</Data></Cell>
+    <Cell ss:Formula="=IF(Projetos!R[15]C[-17]&gt;0,Projetos!R[15]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0353</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="6" ss:StyleID="s154"><Data ss:Type="String">Início</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">Fim</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">Início</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">Fim</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">Início</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">Fim</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">Front</Data></Cell>
+    <Cell><Data ss:Type="String">Projeto</Data></Cell>
+    <Cell><Data ss:Type="String">Total</Data></Cell>
+    <Cell ss:Formula="=IF(Projetos!R[-7]C[-16]&gt;0,Projetos!R[-7]C[-16],&quot;&quot;)"><Data
+      ss:Type="String">OI - Migração - Acquirer</Data></Cell>
+    <Cell ss:Formula="=IF(Projetos!R[15]C[-17]&gt;0,Projetos!R[15]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0354</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159"><Data ss:Type="DateTime">2016-02-01T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"><Data ss:Type="String">Homologação</Data></Cell>
+    <Cell ss:StyleID="s160"><Data ss:Type="String">Cards</Data></Cell>
+    <Cell ss:StyleID="s161"><Data ss:Type="String">Expurgo</Data></Cell>
+    <Cell ss:StyleID="s162"><Data ss:Type="DateTime">1899-12-31T09:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s162"><Data ss:Type="DateTime">1899-12-31T12:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s162"><Data ss:Type="DateTime">1899-12-31T13:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s162"><Data ss:Type="DateTime">1899-12-31T18:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T08:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">Fr15</Data></Cell>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To15* 24</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[-3]C[-16]&gt;0,Projetos!R[-3]C[-16],&quot;&quot;)"><Data
+      ss:Type="String">SANTANDER</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[20]C[-17]&gt;0,Projetos!R[20]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0360 </Data></Cell>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-02T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-02T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">Fr15</Data></Cell>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To15* 24</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[-3]C[-16]&gt;0,Projetos!R[-3]C[-16],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[20]C[-17]&gt;0,Projetos!R[20]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0361</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-03T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-03T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">Fr15</Data></Cell>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To15* 24</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[-3]C[-16]&gt;0,Projetos!R[-3]C[-16],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[20]C[-17]&gt;0,Projetos!R[20]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0362</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-04T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-04T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s169"/>
+    <Cell ss:StyleID="s169"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s170"/>
+    <Cell ss:StyleID="s171"/>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To15* 24</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[-6]C[-16]&gt;0,Projetos!R[-6]C[-16],&quot;&quot;)"><Data
+      ss:Type="String">SANTANDER</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[17]C[-17]&gt;0,Projetos!R[17]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0360 </Data></Cell>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-05T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-05T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">Fr16</Data></Cell>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr16</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To16* 24</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">HP-SODEXO</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[17]C[-17]&gt;0,Projetos!R[17]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0361</Data></Cell>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-06T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-06T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">Fr15</Data></Cell>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To15* 24</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[-6]C[-16]&gt;0,Projetos!R[-6]C[-16],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[17]C[-17]&gt;0,Projetos!R[17]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0362</Data></Cell>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-07T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-07T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">Fr15</Data></Cell>
+    <Cell ss:StyleID="s167"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s168"><Data ss:Type="String">To15* 24</Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[-6]C[-16]&gt;0,Projetos!R[-6]C[-16],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s62"
+     ss:Formula="=IF(Projetos!R[17]C[-17]&gt;0,Projetos!R[17]C[-17],&quot;&quot;)"><Data
+      ss:Type="String">SSEDS-09/0364</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-08T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-08T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-09T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-09T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-10T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-10T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-11T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-11T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-12T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-12T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="21" ss:StyleID="s174"/>
+    <Cell ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-13T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-14T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-14T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-15T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-15T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-16T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-16T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-17T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-17T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-18T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-18T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-19T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-19T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s169"/>
+    <Cell ss:StyleID="s169"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-20T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-20T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-21T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-21T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-22T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-22T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-23T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-23T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-24T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-24T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-25T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-25T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="21" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-26T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-26T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="22" ss:StyleID="s173"/>
+    <Cell ss:Index="24" ss:StyleID="s173"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-27T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-27T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-28T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-28T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-02-29T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-02-29T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s155">
+    <Cell ss:StyleID="s159" ss:Formula="=R[-1]C+1"><Data ss:Type="DateTime">2016-03-01T00:00:00.000</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:StyleID="s160" ss:Formula="=RC[-1]"><Data ss:Type="DateTime">2016-03-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s161"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"
+     ss:Formula="=(RC[-5]-RC[-6])+(RC[-3]-RC[-4])+(RC[-1]-RC[-2])"><Data
+      ss:Type="DateTime">1899-12-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="18.75" ss:StyleID="s155">
+    <Cell ss:MergeAcross="9" ss:StyleID="m129945192"><Data ss:Type="String">Total de Horas do Período</Data><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m129945212"
+     ss:Formula="=SUM(R[-30]C[1]:R[-1]C[1])"><Data ss:Type="DateTime">1899-12-31T08:00:00.000</Data></Cell>
+    <Cell ss:Index="14" ss:StyleID="s187"><Data ss:Type="String">Fr54</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Pr54</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">To54* 24</Data></Cell>
+    <Cell ss:StyleID="s190"/>
+    <Cell ss:StyleID="s172"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:MergeAcross="4" ss:MergeDown="1" ss:StyleID="m129945232"><NamedCell
+      ss:Name="Front"/></Cell>
+    <Cell ss:MergeAcross="6" ss:MergeDown="1" ss:StyleID="m129945252"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr55</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Pr55</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">To55* 24</Data></Cell>
+    <Cell ss:StyleID="s210"/>
+    <Cell ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="14"><Data ss:Type="String">Fr56</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Pr56</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">To56* 24</Data></Cell>
+    <Cell ss:StyleID="s210"/>
+    <Cell ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12">
+    <Cell ss:MergeAcross="4" ss:StyleID="m129945360"><Data ss:Type="String">Assinatura do Gerente Responsável</Data></Cell>
+    <Cell ss:MergeAcross="6" ss:StyleID="m129945380"><Data ss:Type="String">Assinatura do Profissional</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr57</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Pr57</Data></Cell>
+    <Cell><Data ss:Type="String">To57* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr58</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Pr58</Data></Cell>
+    <Cell><Data ss:Type="String">To58* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr59</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Pr59</Data></Cell>
+    <Cell><Data ss:Type="String">To59* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="5" ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr60</Data></Cell>
+    <Cell><Data ss:Type="String">Pr60</Data></Cell>
+    <Cell><Data ss:Type="String">To60* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="5" ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr61</Data></Cell>
+    <Cell><Data ss:Type="String">Pr61</Data></Cell>
+    <Cell><Data ss:Type="String">To61* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="5" ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr62</Data></Cell>
+    <Cell><Data ss:Type="String">Pr62</Data></Cell>
+    <Cell><Data ss:Type="String">To62* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="5" ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr63</Data></Cell>
+    <Cell><Data ss:Type="String">Pr63</Data></Cell>
+    <Cell><Data ss:Type="String">To63* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="5" ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr64</Data></Cell>
+    <Cell><Data ss:Type="String">Pr64</Data></Cell>
+    <Cell><Data ss:Type="String">To64* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s190"/>
+    <Cell ss:StyleID="s224"/>
+    <Cell ss:StyleID="s224"/>
+    <Cell ss:StyleID="s224"/>
+    <Cell ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr65</Data></Cell>
+    <Cell><Data ss:Type="String">Pr65</Data></Cell>
+    <Cell><Data ss:Type="String">To65* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s190"/>
+    <Cell ss:StyleID="s225"/>
+    <Cell ss:StyleID="s225"/>
+    <Cell ss:StyleID="s225"/>
+    <Cell ss:StyleID="s223"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr66</Data></Cell>
+    <Cell><Data ss:Type="String">Pr66</Data></Cell>
+    <Cell><Data ss:Type="String">To66* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s190"/>
+    <Cell ss:StyleID="s224"/>
+    <Cell ss:StyleID="s224"/>
+    <Cell ss:StyleID="s224"/>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr67</Data></Cell>
+    <Cell><Data ss:Type="String">Pr67</Data></Cell>
+    <Cell><Data ss:Type="String">To67* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr68</Data></Cell>
+    <Cell><Data ss:Type="String">Pr68</Data></Cell>
+    <Cell><Data ss:Type="String">To68* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr69</Data></Cell>
+    <Cell><Data ss:Type="String">Pr69</Data></Cell>
+    <Cell><Data ss:Type="String">To69* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr70</Data></Cell>
+    <Cell><Data ss:Type="String">Pr70</Data></Cell>
+    <Cell><Data ss:Type="String">To70* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr71</Data></Cell>
+    <Cell><Data ss:Type="String">Pr71</Data></Cell>
+    <Cell><Data ss:Type="String">To71* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr72</Data></Cell>
+    <Cell><Data ss:Type="String">Pr72</Data></Cell>
+    <Cell><Data ss:Type="String">To72* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr73</Data></Cell>
+    <Cell><Data ss:Type="String">Pr73</Data></Cell>
+    <Cell><Data ss:Type="String">To73* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr74</Data></Cell>
+    <Cell><Data ss:Type="String">Pr74</Data></Cell>
+    <Cell><Data ss:Type="String">To74* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr75</Data></Cell>
+    <Cell><Data ss:Type="String">Pr75</Data></Cell>
+    <Cell><Data ss:Type="String">To75* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr76</Data></Cell>
+    <Cell><Data ss:Type="String">Pr76</Data></Cell>
+    <Cell><Data ss:Type="String">To76* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr77</Data></Cell>
+    <Cell><Data ss:Type="String">Pr77</Data></Cell>
+    <Cell><Data ss:Type="String">To77* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr78</Data></Cell>
+    <Cell><Data ss:Type="String">Pr78</Data></Cell>
+    <Cell><Data ss:Type="String">To78* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14"><Data ss:Type="String">Fr79</Data></Cell>
+    <Cell><Data ss:Type="String">Pr79</Data></Cell>
+    <Cell><Data ss:Type="String">To79* 24</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="14" ss:Formula="=#REF!"><Data ss:Type="Error">#REF!</Data></Cell>
+    <Cell ss:Formula="=#REF!"><Data ss:Type="Error">#REF!</Data></Cell>
+    <Cell ss:Formula="=RC[-4]* 24"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="18"
+     ss:Formula="=IF(Projetos!R[30]C[-17]&gt;0,Projetos!R[30]C[-17],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape" x:CenterHorizontal="1"/>
+    <Header x:Margin="0.51180555555555562"/>
+    <Footer x:Margin="0.51180555555555562"/>
+    <PageMargins x:Bottom="0.27569444444444446" x:Left="0.39374999999999999"
+     x:Right="0.39374999999999999" x:Top="0.27569444444444446"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <FitHeight>999</FitHeight>
+    <ValidPrinterInfo/>
+    <Scale>69</Scale>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>10</SplitHorizontal>
+   <TopRowBottomPane>10</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowInsertRows/>
+   <AllowDeleteRows/>
+   <AllowFilter/>
+   <AllowUsePivotTables/>
+  </WorksheetOptions>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R11C2:R40C4</Range>
+   <Condition>
+    <Qualifier>Equal</Qualifier>
+    <Value1>&quot;sábado&quot;</Value1>
+    <Format Style='color:red'/>
+   </Condition>
+   <Condition>
+    <Qualifier>Equal</Qualifier>
+    <Value1>&quot;domingo&quot;</Value1>
+    <Format Style='color:red'/>
+   </Condition>
+  </ConditionalFormatting>
+ </Worksheet>
+ <Worksheet ss:Name="Consolidado">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="199" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:AutoFitWidth="0" ss:Width="206.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="56.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="32.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s226"><Data ss:Type="String">Front</Data></Cell>
+    <Cell ss:StyleID="s227"><Data ss:Type="String">Projeto</Data></Cell>
+    <Cell ss:StyleID="s228"><Data ss:Type="String">Total</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr11</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr11</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr11 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr12</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr12</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr12 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr13</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr13</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr13 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr14</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr14</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr14 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr15</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr15</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr15 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr16</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr16</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr16 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr17</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr17</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr17 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr18</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr18</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr18 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr19</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr19</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr19 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr20</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr20</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr20 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr21</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr21</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr21 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr22</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr22</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr22 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr23</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr23</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr23 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr24</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr24</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr24 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr25</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr25</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr25 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr26</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr26</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr26 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr27</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr27</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr27 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr28</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr28</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr28 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr29</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr29</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr29 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr30</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr30</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr30 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr31</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr31</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr31 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr32</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr32</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr32 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr33</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr33</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr33 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr34</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr34</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr34 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr35</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr35</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr35 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr36</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr36</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr36 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr37</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr37</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr37 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr38</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr38</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr38 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr39</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr39</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr39 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr40</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr40</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr40 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr41</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr41</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr41 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr42</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr42</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr42 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr43</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr43</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr43 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr44</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr44</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr44 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr45</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr45</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr45 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr46</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr46</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr46 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr47</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr47</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr47 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr48</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr48</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr48 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr49</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr49</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr49 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr50</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr50</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr50 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr51</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr51</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr51 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr52</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr52</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr52 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr53</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr53</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr53 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr54</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr54</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr54 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr55</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr55</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr55 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr56</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr56</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr56 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr57</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr57</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr57 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr58</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr58</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr58 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr59</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:StyleID="s232"><Data ss:Type="String">Pr59</Data></Cell>
+    <Cell ss:StyleID="s233"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s229"><Data ss:Type="String">Fr59 Total</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:StyleID="s235"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s231"/>
+    <Cell ss:Index="3" ss:StyleID="s230"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell ss:StyleID="s236"><Data ss:Type="String">Total geral</Data></Cell>
+    <Cell ss:StyleID="s237"/>
+    <Cell ss:StyleID="s238"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.49212598499999999"/>
+    <Footer x:Margin="0.49212598499999999"/>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <Visible>SheetHidden</Visible>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>29</ActiveRow>
+     <RangeSelection>R2C1:R2C2,R6C1:R6C2,R10C1:R10C2,R14C1:R14C2,R18C1:R18C2,R22C1:R22C2,R26C1:R26C2,R30C1:R30C2,R34C1:R34C2,R38C1:R38C2,R42C1:R42C2,R46C1:R46C2,R50C1:R50C2,R54C1:R54C2,R58C1:R58C2,R62C1:R62C2,R66C1:R66C2,R70C1:R70C2,R74C1:R74C2,R78C1:R78C2,R82C1:R82C2,R86C1:R86C2,R90C1:R90C2,R94C1:R94C2,R98C1:R98C2,R102C1:R102C2,R106C1:R106C2,R110C1:R110C2,R114C1:R114C2,R118C1:R118C2,R122C1:R122C2,R126C1:R126C2,R130C1:R130C2,R134C1:R134C2,R138C1:R138C2,R142C1:R142C2,R146C1:R146C2,R150C1:R150C2,R154C1:R154C2,R158C1:R158C2,R162C1:R162C2,R166C1:R166C2,R170C1:R170C2,R174C1:R174C2,R178C1:R178C2,R182C1:R182C2,R186C1:R186C2,R190C1:R190C2,R194C1:R194C2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Projetos">
+  <Names>
+   <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=Projetos!R16C1:R80C2"
+    ss:Hidden="1"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="80" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s239">
+   <Column ss:StyleID="s240" ss:Width="110.25"/>
+   <Column ss:StyleID="s240" ss:Width="359.25"/>
+   <Column ss:StyleID="s239" ss:AutoFitWidth="0" ss:Width="117.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="24">
+    <Cell ss:StyleID="s241"><Data ss:Type="String">Frente&#10;Trabalho</Data></Cell>
+    <Cell ss:StyleID="s239"/>
+    <Cell ss:MergeAcross="3" ss:MergeDown="2" ss:StyleID="s243"><Data
+      ss:Type="String">Caso necessite de alguma alteração nesta pasta, Favor entrar em contato com Mauro/Airton/José Eduardo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s244"><Data ss:Type="String">OI - Migração - Issuer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s244"><Data ss:Type="String">OI - Migração - Acquirer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s244"><Data ss:Type="String">OI - Especif. OI</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"><Data ss:Type="String">OI - Especif. EDS</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"><Data ss:Type="String">BankPar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"><Data ss:Type="String">INDRA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"><Data ss:Type="String">SANTANDER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s245"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24">
+    <Cell ss:StyleID="s246"><Data ss:Type="String">Projetos&#10;(SSEDS)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s247"><Data ss:Type="String">Descrição</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0338</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Regulatórios - DEBAN</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0344</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Regulatórios - DIRF : Lider : Marcio Henrique </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0347</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Informações Gerenciais (Data Mart) (E/ADQ)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0349</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Migração Adquirente </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0350</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Requerimento do Módulo de Análise de Crédito - Lider : Mauro Laxe </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0351</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração com o Módulo de Análise de Credito (Proposta) - Lider : Mauro Laxe </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0352</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração com o Gateway - Lider : Mauro Laxe </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0353</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração com os Bancos - Pagamentos - Lider : Ciro Lago </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0354</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração com o Print Center - Lider : Ciro Lago </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0355</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração com a Oi Móvel - Débito Automático - Lider : Ciro Lago </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0356</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Comunicação via SMS - Lider : Mauro Laxe </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0357</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Comunicação via WEB - Lider : Paulo Takeshi </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0358</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Contábil - Lider : Jonas Lira </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0359</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Regulatórios - DIRF : Lider : Marcio Henrique </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0360 </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Regulatórios - SEFAZ : Lider : Marcio Henrique </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0361</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Programa de Recompensas</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0362</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Oi Paggo - Consultoria</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0364</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Cobrança  </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0365</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Autorização</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0366</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Central de Atendimento (CRM)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0367</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Faturamento </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s250"><Data ss:Type="String">SSEDS-09/0368</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Migração Emissor </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0370</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração com Bancos - Liquidação</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0374</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração - Conciliação Key Account</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0375</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Seguros (Emissor)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0376</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Consulta de Estabelecimentos Credenciados (Emissor).</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0377</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Reenvio de Welcome Kit (Emissor).</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0378</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Liquidação de Estabelecimento - Modelo Oi Paggo.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0379</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Comunicação via E-mail (Emissor e Adquirente).</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0380</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Notificação do Cliente via SMS (Emissor)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0381</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Central de Atendimento (URA)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0382</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Agenda Financeira (Emissor e Adquirente)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0384</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Terminal X Numero de Celular (DE/PARA)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0385</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s251"><Data ss:Type="String">Adequação de Cadastro - Segmentação de Estabelecimento</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0386</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s252"><Data ss:Type="String">Comunicação via E-mail (Fatura / Extrato)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0388</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Integração GetNet - Cadastramento Massivo (Adquirente).</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0398</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Terminal X Numero de Celular (DE/PARA - EMISSOR).</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s248"><Data ss:Type="String">SSEDS-09/0908</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s249"><Data ss:Type="String">Regulatórios - DECRED</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s253"><Data ss:Type="String">SSEDS-Bankpar</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s254"><Data ss:Type="String">Bankpar</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s253"><Data ss:Type="String">SSEDS-xx/xxxx</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s254"><Data ss:Type="String">xxxx</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><Data ss:Type="String">Bradesco - CPB</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><Data ss:Type="String">CPB - Cartão Passagem Bradesco</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><Data ss:Type="String">Indra - Book Parâmetros</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><Data ss:Type="String">Projeto Book Parâmetros</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><Data ss:Type="String">Indra - Cadastral</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><Data ss:Type="String">Desenvolvimento Projeto Cadastral</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><Data ss:Type="String">Indra - Migração</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><Data ss:Type="String">Projeto Migração</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s255"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s256"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s257"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s258"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.49212598499999999"/>
+    <Footer x:Margin="0.49212598499999999"/>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <Visible>SheetHidden</Visible>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <TopRowVisible>36</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>58</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

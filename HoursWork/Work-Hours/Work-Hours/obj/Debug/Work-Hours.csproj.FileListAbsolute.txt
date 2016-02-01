@@ -1,0 +1,10 @@
+C:\Users\costasa\Documents\GitHub\NET\HoursWork\Work-Hours\Work-Hours\bin\Debug\Work-Hours.exe.config
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\bin\Debug\Work-Hours.exe.config
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\bin\Debug\Work-Hours.exe
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\bin\Debug\Work-Hours.pdb
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\obj\Debug\Work-Hours.csprojResolveAssemblyReference.cache
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\obj\Debug\Work_Hours.Form1.resources
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\obj\Debug\Work_Hours.Properties.Resources.resources
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\obj\Debug\Work-Hours.csproj.GenerateResource.Cache
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\obj\Debug\Work-Hours.exe
+C:\Users\costasa\Documents\GitHub\ASP.NET\HoursWork\Work-Hours\Work-Hours\obj\Debug\Work-Hours.pdb
