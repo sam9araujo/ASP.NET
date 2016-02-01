@@ -19,7 +19,7 @@ namespace Work_Hours
             InitializeComponent();
         }
 
-        public string pathSRC = @"C:\02-2016.csv";
+        public string pathSRC = @"../planilha/02-2016.csv";
 
         private void Form1_Load(object sender, EventArgs e)
         {
