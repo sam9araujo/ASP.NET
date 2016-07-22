@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Domain.DTO;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository;
+
+namespace Laboris.Cosan.UI.Controller
+{
+    public sealed class MeusPedidosController : BaseController<PedidoDTO>
+    {
+        public MeusPedidosController()
+        {
+
+        }
+
+        public void ConsultarPedido(int idPedido, string cpf)
+        {
+            View.Pedidos = PedidoRepository.Instance.ConsultarPedido(idPedido, cpf);
+        }
+
+        public void ConsultarPedidoData(DateTime dataIni, DateTime dataFin, string cpf)
+        {
+            View.Pedidos = PedidoRepository.Instance.ConsultarPedidoData(dataIni, dataFin, cpf);
+        
+        }
+
+        public void CarregarListaPedidos()
+        {
+            View.Pedidos = PedidoRepository.Instance.Listar();
+            //View.Parceiro = ParceiroRepository.Instance.Listar();
+        }
+    }
+}

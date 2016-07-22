@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cosanv2/!svn/ver/234/trunk/src/Laboris.Cosan.Domain/DTO
+END
+TesteDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cosanv2/!svn/ver/40/trunk/src/Laboris.Cosan.Domain/DTO/TesteDTO.cs
+END
+AmbienteDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cosanv2/!svn/ver/96/trunk/src/Laboris.Cosan.Domain/DTO/AmbienteDTO.cs
+END
+ParceirosListaDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cosanv2/!svn/ver/228/trunk/src/Laboris.Cosan.Domain/DTO/ParceirosListaDTO.cs
+END
+PedidoDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cosanv2/!svn/ver/81/trunk/src/Laboris.Cosan.Domain/DTO/PedidoDTO.cs
+END
+LojaDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cosanv2/!svn/ver/54/trunk/src/Laboris.Cosan.Domain/DTO/LojaDTO.cs
+END
+UsuarioDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cosanv2/!svn/ver/168/trunk/src/Laboris.Cosan.Domain/DTO/UsuarioDTO.cs
+END
+HomeDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cosanv2/!svn/ver/59/trunk/src/Laboris.Cosan.Domain/DTO/HomeDTO.cs
+END
+PrateleiraProdutosDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cosanv2/!svn/ver/234/trunk/src/Laboris.Cosan.Domain/DTO/PrateleiraProdutosDTO.cs
+END
+DeParaDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cosanv2/!svn/ver/76/trunk/src/Laboris.Cosan.Domain/DTO/DeParaDTO.cs
+END
+ProdutoDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cosanv2/!svn/ver/76/trunk/src/Laboris.Cosan.Domain/DTO/ProdutoDTO.cs
+END
+BuscaDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cosanv2/!svn/ver/73/trunk/src/Laboris.Cosan.Domain/DTO/BuscaDTO.cs
+END
+ucNaveguePorTemasDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/67/trunk/src/Laboris.Cosan.Domain/DTO/ucNaveguePorTemasDTO.cs
+END
+OfertasDTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cosanv2/!svn/ver/82/trunk/src/Laboris.Cosan.Domain/DTO/OfertasDTO.cs
+END

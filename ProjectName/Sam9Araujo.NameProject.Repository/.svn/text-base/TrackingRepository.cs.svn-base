@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository.DAL;
+
+namespace Laboris.Cosan.Repository
+{
+    public class TrackingRepository :BaseRepository<Tracking,TrackingDAL,TrackingRepository>,IRepositoryBase
+    {
+    }
+}

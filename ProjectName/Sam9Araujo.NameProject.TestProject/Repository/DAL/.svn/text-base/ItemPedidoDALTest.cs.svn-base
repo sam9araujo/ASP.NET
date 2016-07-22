@@ -1,0 +1,155 @@
+﻿using Laboris.Cosan.Repository.DAL;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using Laboris.Cosan.DataAccessLayer;
+using Laboris.Cosan.Domain;
+using System.Collections.Generic;
+using System.Data;
+
+namespace Laboris.Cosan.TestProject.Repository.DAL
+{
+    /// <summary>
+    ///This is a test class for ProdutoDALTest and is intended
+    ///to contain all ProdutoDALTest Unit Tests
+    ///</summary>
+    [TestClass()]
+    public class ItemPedidoDALTest
+    {
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+
+
+        [TestMethod()]
+        public void ListarTest()
+        {
+            ItemPedidoDAL target = new ItemPedidoDAL();
+            IList<ItemPedido> actual = null;
+            actual = target.Listar();
+            Assert.IsNotNull(actual);
+        }
+
+        [TestMethod()]
+        public void ObterTest()
+        {
+            ItemPedidoDAL target = new ItemPedidoDAL();
+            ItemPedido actual = null;
+            actual = target.Obter("idPedido = 1");
+            Assert.IsNotNull(actual);
+        }
+
+        //[TestMethod()]
+        public void FactoryTest()
+        {
+            ItemPedidoDAL dal = new ItemPedidoDAL();
+            //dal.
+            IDataReader DataReader = null;
+            ItemPedido expected = null; // TODO: Initialize to an appropriate value
+            ItemPedido actual;
+            actual = dal.Factory(DataReader);
+            Assert.AreEqual(expected, actual);
+            Assert.Inconclusive("Verify the correctness of this test method.");
+        }
+
+        /// <summary>
+        ///A test for Insert
+        ///</summary>
+        //[TestMethod()]
+        public void InsertTest()
+        {
+            ItemPedidoDAL target = new ItemPedidoDAL();
+            ItemPedido itemPedido = new ItemPedido();
+
+            itemPedido.IdItem = 2;
+            itemPedido.IdParceiro = 1;
+            itemPedido.IdPedido = 1;
+            itemPedido.Nivel= 2;
+            itemPedido.NomeProduto= "Teste2";
+            itemPedido.Pontos= 200;
+            itemPedido.PrecoUnitario= 23.50;
+            itemPedido.Quantidade= 2;
+            itemPedido.ValorRebate = 20;
+
+            target.Insert(itemPedido);
+            ItemPedido itemPedidoTest = target.Obter("IdItem = " + itemPedido.IdItem + "AND IdParceiro=" + itemPedido.IdParceiro + "AND IdPedido=" + itemPedido.IdPedido);
+
+            Assert.AreEqual(itemPedido.IdItem,itemPedidoTest.IdItem);
+            Assert.AreEqual(itemPedido.IdParceiro, itemPedidoTest.IdParceiro);
+            Assert.AreEqual(itemPedido.IdPedido, itemPedidoTest.IdPedido);
+            Assert.AreEqual(itemPedido.Nivel, itemPedidoTest.Nivel);
+            Assert.AreEqual(itemPedido.NomeProduto, itemPedidoTest.NomeProduto);
+            Assert.AreEqual(itemPedido.Pontos, itemPedidoTest.Pontos);
+            Assert.AreEqual(itemPedido.PrecoUnitario, itemPedidoTest.PrecoUnitario);
+            Assert.AreEqual(itemPedido.Quantidade, itemPedidoTest.Quantidade);
+            Assert.AreEqual(itemPedido.ValorRebate, itemPedidoTest.ValorRebate);
+        }
+
+        /// <summary>
+        ///A test for Update
+        ///</summary>
+        //[TestMethod()]
+        public void UpdateTest()
+        {
+            ItemPedidoDAL target = new ItemPedidoDAL();
+            ItemPedido itemPedido = new ItemPedido();
+
+            itemPedido.IdItem = 2;
+            itemPedido.IdParceiro = 1;
+            itemPedido.IdPedido = 1;
+            itemPedido.Nivel = 2;
+            itemPedido.NomeProduto = "Teste Unitário UPDATE";
+            itemPedido.Pontos = 200;
+            itemPedido.PrecoUnitario = 23.50;
+            itemPedido.Quantidade = 2;
+            itemPedido.ValorRebate = 20;
+
+            target.Update(itemPedido);
+            ItemPedido itemPedidoTest = target.Obter("IdItem = " + itemPedido.IdItem + "AND IdParceiro=" + itemPedido.IdParceiro + "AND IdPedido=" + itemPedido.IdPedido);
+
+            Assert.AreEqual(itemPedido.IdItem, itemPedidoTest.IdItem);
+            Assert.AreEqual(itemPedido.IdParceiro, itemPedidoTest.IdParceiro);
+            Assert.AreEqual(itemPedido.IdPedido, itemPedidoTest.IdPedido);
+            Assert.AreEqual(itemPedido.Nivel, itemPedidoTest.Nivel);
+            Assert.AreEqual(itemPedido.NomeProduto, itemPedidoTest.NomeProduto);
+            Assert.AreEqual(itemPedido.Pontos, itemPedidoTest.Pontos);
+            Assert.AreEqual(itemPedido.PrecoUnitario, itemPedidoTest.PrecoUnitario);
+            Assert.AreEqual(itemPedido.Quantidade, itemPedidoTest.Quantidade);
+            Assert.AreEqual(itemPedido.ValorRebate, itemPedidoTest.ValorRebate);
+        }
+
+        /// <summary>
+        ///A test for Delete
+        ///</summary>
+        [TestMethod()]
+        public void DeleteTest()
+        {
+            ItemPedidoDAL target = new ItemPedidoDAL();
+            ItemPedido itemPedido = new ItemPedido();
+
+            itemPedido.IdItem = 2;
+            itemPedido.IdParceiro = 1;
+            itemPedido.IdPedido = 1;
+
+
+            target.Delete(itemPedido);
+
+            //Assert.(ambiente, target.Obter("IdAmbiente = 101"));
+        }
+    }
+}
+

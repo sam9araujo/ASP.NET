@@ -1,0 +1,9 @@
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.Domain\bin\Debug\Laboris.Cosan.Domain.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.Domain\bin\Debug\Laboris.Cosan.Domain.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.Domain\obj\Debug\Laboris.Cosan.Domain.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.Domain\obj\Debug\Laboris.Cosan.Domain.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.Domain\bin\Debug\Laboris.Cosan.Domain.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.Domain\bin\Debug\Laboris.Cosan.Domain.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.Domain\obj\Debug\Sam9Araujo.NameProject.Domain.csprojResolveAssemblyReference.cache
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.Domain\obj\Debug\Laboris.Cosan.Domain.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.Domain\obj\Debug\Laboris.Cosan.Domain.pdb

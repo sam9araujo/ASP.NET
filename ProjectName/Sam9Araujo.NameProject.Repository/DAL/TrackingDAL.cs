@@ -1,0 +1,154 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Sam9araujo.NameProject.DataAccessLayer;
+using System.Configuration;
+using Sam9araujo.NameProject.Domain;
+using System.Data;
+
+namespace Sam9araujo.NameProject.Repository.DAL
+{
+    /// <summary>
+    /// A classe seleciona tudo relativo ao Tracking de determinado parceiro e pedido
+    /// A classe tem como proposito rastrear (verificar os diferentes tipos de status) de cada pedido de cada parceiro
+    /// </summary>
+    public class TrackingDAL : BaseDAL<Tracking>
+    {
+        private PedidoDAL _pedidoDAL;
+
+        public PedidoDAL PedidoDAL
+        {
+            get
+            {
+                if (_pedidoDAL == null)
+                    _pedidoDAL = new PedidoDAL();
+
+                return _pedidoDAL;
+            }
+        }
+
+        public override string SqlSELECT
+        {
+            get { return QuerysSQL.selectTracking; }
+        }
+
+        public override string SqlINSERT
+        {
+            get { return QuerysSQL.insertTracking; }
+        }
+
+        public override string SqlUPDATE
+        {
+            get { return QuerysSQL.updateTracking; }
+        }
+
+        public override string SqlDELETE
+        {
+            get { return QuerysSQL.deleteTracking ; }
+        }
+
+        public override string SqlWhereKey
+        {
+            get { return QuerysSQL.whereKeyTracking; }
+        }
+
+        internal override void ExecuteIncludes(List<Tracking> trackings)
+        {
+             
+            if (_pedidoDAL != null)
+            {
+                for (int i = 0; i < trackings.Count; i++)
+                    trackings[i].Pedido = _pedidoDAL.Obter("idPedido = " + trackings[i].IdPedido);
+            }
+            
+        }
+
+        internal override IDbDataParameter[] PrepareParametersFactory(Tracking tracking, bool includeKeys = false)
+        {
+            IDbDataParameter[] dataParameters;
+
+            if (includeKeys)
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 8);
+            else
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 5);
+           
+            dataParameters[0].ParameterName = "idPedido";
+            dataParameters[0].DbType = DbType.Int32;
+            dataParameters[0].Value = tracking.IdPedido;
+
+            dataParameters[1].ParameterName = "idParceiro";
+            dataParameters[1].DbType = DbType.Int32;
+            dataParameters[1].Value = tracking.IdParceiro;
+
+            dataParameters[2].ParameterName = "idTracking";
+            dataParameters[2].DbType = DbType.Int32;
+            dataParameters[2].Value = tracking.IdTracking;
+
+            dataParameters[3].ParameterName = "Status";
+            dataParameters[3].DbType = DbType.String;
+            dataParameters[3].Value = tracking.Status;
+
+            dataParameters[4].ParameterName = "data";
+            dataParameters[4].DbType = DbType.DateTime;
+            dataParameters[4].Value = tracking.Data;
+
+            if (includeKeys)
+            {
+                int i = 5;
+
+                keyMethod(tracking, dataParameters, i);
+            }
+
+            return dataParameters;
+        }
+
+        private static void keyMethod(Tracking tracking, IDbDataParameter[] dataParameters, int i)
+        {
+            dataParameters[i].ParameterName = "idPedidoKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = tracking.IdPedido;
+
+            i++;
+
+            dataParameters[i].ParameterName = "idParceiroKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = tracking.IdParceiro;
+
+            i++;
+
+            dataParameters[i].ParameterName = "idTrackingKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = tracking.IdTracking;
+        }
+
+        internal override IDbDataParameter[] PrepareParametersKeyFactory(Tracking tracking)
+        {
+            IDbDataParameter[] dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 2);
+
+            int i = 0;
+
+            keyMethod(tracking, dataParameters, i);
+
+            return dataParameters;
+        }
+
+        public TrackingDAL()
+        {
+
+        }
+
+        public override Tracking Factory(IDataReader DataReader)
+        {
+            Tracking tracking = new Tracking();
+            {
+                tracking.IdTracking = int.Parse(DataReader["idTracking"].ToString());
+                tracking.IdParceiro = int.Parse(DataReader["idParceiro"].ToString());
+                tracking.IdPedido = int.Parse(DataReader["idPedido"].ToString());
+                tracking.Status = DataReader["status"].ToString();
+                tracking.Data = DateTime.Parse(DataReader["data"].ToString());
+            }
+            return tracking;
+        }
+    }
+}

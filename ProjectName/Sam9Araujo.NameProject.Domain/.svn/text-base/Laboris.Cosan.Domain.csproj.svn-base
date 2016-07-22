@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{188EEBE4-20F6-4E8A-8F00-0290ACB86220}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laboris.Cosan.Domain</RootNamespace>
+    <AssemblyName>Laboris.Cosan.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ambiente.cs" />
+    <Compile Include="Base\BaseDomain.cs" />
+    <Compile Include="Base\IBaseDomain.cs" />
+    <Compile Include="Base\IDomain.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="DTO\PrateleiraProdutosDTO.cs" />
+    <Compile Include="DTO\UsuarioDTO.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="DTO\AmbienteDTO.cs" />
+    <Compile Include="DTO\BuscaDTO.cs" />
+    <Compile Include="DTO\OfertasDTO.cs" />
+    <Compile Include="DTO\ProdutoDTO.cs" />
+    <Compile Include="DTO\DeParaDTO.cs" />
+    <Compile Include="DTO\PedidoDTO.cs" />
+    <Compile Include="DTO\ucNaveguePorTemasDTO.cs" />
+    <Compile Include="DTO\ParceirosListaDTO.cs" />
+    <Compile Include="DTO\HomeDTO.cs" />
+    <Compile Include="DTO\LojaDTO.cs" />
+    <Compile Include="OrderPointsTemp.cs" />
+    <Compile Include="ItemPedido.cs" />
+    <Compile Include="Newsletter.cs" />
+    <Compile Include="Rebate.cs" />
+    <Compile Include="ImagemProduto.cs" />
+    <Compile Include="DTO\Base\BaseDTO.cs" />
+    <Compile Include="DTO\Base\IBaseDTO.cs" />
+    <Compile Include="DTO\TesteDTO.cs" />
+    <Compile Include="AtributoProduto.cs" />
+    <Compile Include="ImportacaoProdutoXML.cs" />
+    <Compile Include="Parceiro.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="Produto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracking.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Laboris.Cosan.Domain.dll" />
+    <Content Include="bin\Debug\Laboris.Cosan.Domain.pdb" />
+    <Content Include="obj\Debug\Laboris.Cosan.Domain.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Laboris.Cosan.Domain.dll" />
+    <Content Include="obj\Debug\Laboris.Cosan.Domain.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

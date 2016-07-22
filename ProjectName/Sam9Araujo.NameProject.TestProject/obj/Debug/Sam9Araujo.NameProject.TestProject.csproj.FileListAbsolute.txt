@@ -1,0 +1,2 @@
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.TestProject\obj\Debug\Sam9Araujo.NameProject.TestProject.csprojResolveAssemblyReference.cache
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.TestProject\obj\Debug\Sam9Araujo.NameProject.TestProject.csprojResolveAssemblyReference.cache

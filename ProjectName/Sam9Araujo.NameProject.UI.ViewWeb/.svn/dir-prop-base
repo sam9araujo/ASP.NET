@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 86
+Laboris.Cosan.UI.ViewWeb.Publish.xml
+Laboris.Cosan.UI.ViewWeb.csproj.user
+_js
+bin
+obj
+
+END

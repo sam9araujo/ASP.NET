@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 65
+Laboris.Cosan.TestProject.csproj.user
+bin
+obj
+Service References
+
+END

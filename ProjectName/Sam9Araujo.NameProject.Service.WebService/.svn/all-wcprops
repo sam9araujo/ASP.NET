@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cosanv2/!svn/ver/111/trunk/src/Laboris.Cosan.Service.WebService
+END
+Login.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cosanv2/!svn/ver/111/trunk/src/Laboris.Cosan.Service.WebService/Login.asmx
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Web.Release.config
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cosanv2/!svn/ver/111/trunk/src/Laboris.Cosan.Service.WebService/Web.config
+END
+Login.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cosanv2/!svn/ver/111/trunk/src/Laboris.Cosan.Service.WebService/Login.asmx.cs
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/111/trunk/src/Laboris.Cosan.Service.WebService/Logger.cs
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Web.Debug.config
+END
+Laboris.Cosan.Service.WebService.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cosanv2/!svn/ver/111/trunk/src/Laboris.Cosan.Service.WebService/Laboris.Cosan.Service.WebService.csproj
+END

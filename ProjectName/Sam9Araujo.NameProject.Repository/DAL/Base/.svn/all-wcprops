@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.Repository/DAL/Base
+END
+BaseDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.Repository/DAL/Base/BaseDAL.cs
+END
+BaseDALTeste.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cosanv2/!svn/ver/25/trunk/src/Laboris.Cosan.Repository/DAL/Base/BaseDALTeste.cs
+END
+IDataAccessLayer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cosanv2/!svn/ver/40/trunk/src/Laboris.Cosan.Repository/DAL/Base/IDataAccessLayer.cs
+END
+IBaseDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.Repository/DAL/Base/IBaseDAL.cs
+END
+IBaseDALTeste.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cosanv2/!svn/ver/18/trunk/src/Laboris.Cosan.Repository/DAL/Base/IBaseDALTeste.cs
+END

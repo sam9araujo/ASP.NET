@@ -1,0 +1,65 @@
+<<<<<<< .mine
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Laboris.Cosan.UI.ViewWeb._Default" %>
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+=======
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Portal.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Laboris.Cosan.UI.ViewWeb.Default" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+<div id="meio">
+	<div class="in">
+		<div id="sidebar">
+			<span>Navegue por:</span>
+			<ul>
+				<li class="hover"><a href="#">Temas</a></li>
+				<li><a href="#">Lojas</a></li>
+				<li><a href="#">Catálogo de ofertas</a></li>
+			</ul>
+			<div>
+				<asp:TextBox runat="server" class="text" />
+				<asp:ImageButton ImageUrl="~/img/submitsidebar.png" runat="server" />
+			</div>
+			<div id="fav">
+				<h1>Meus favoritos</h1>
+				<p>Arraste os temas e produtos, e monte sua lista favorita.</p>
+				<div>0 Itens</div>
+			</div>
+			<div id="parceiros">
+				<h1>Nossos parceiros</h1>
+                <asp:Panel ID="panelListaParceiros" runat="server"></asp:Panel>
+			</div>
+		</div>
+		<div id="conteudo">
+			<h1>Seja bem-vindo ao Shopping Pontos! Fique a vontade e visite os ambientes abaixo.</h1>
+			<div id="divAmbienteEsq" class="ambiente" runat="server"></div>
+			<div class="ambiente">
+				<div id="anuncio">
+					<p>Clube de compras</p>
+					<div>
+						<img src="img/demo/anuncio.jpg" alt="" />
+					</div>
+				</div>
+                <div id="divAmbienteDir" class="ambiente" runat="server"></div>
+			</div>
+		</div>
+	</div>
+</div>
+>>>>>>> .r56
+</asp:Content>
+<<<<<<< .mine
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <h2>
+        Welcome to ASP.NET!
+    </h2>
+    <p>
+        <asp:DropDownList ID="ddlAmbientes" runat="server" AutoPostBack="true">
+        </asp:DropDownList>
+        <asp:DropDownList ID="ddlCategorias" runat="server">
+        </asp:DropDownList>
+    </p>
+    <p>
+        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
+    </p>
+    <p>
+        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409" title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
+    </p>
+</asp:Content>=======
+>>>>>>> .r56

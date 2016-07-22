@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c3b59db1-b090-4f5a-861d-49f8bc6fb559" name="bruno.dalessio@LABDT-050 2011-02-28 17:20:19" runUser="DOMAIN-LABORIS\bruno.dalessio" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7ce90a30-94f0-421a-97c8-ad1989b9e664">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="bruno.dalessio_LABDT-050 2011-02-28 17_20_19">
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Domain\bin\Debug\Laboris.Cosan.Domain.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Repository\bin\Debug\Laboris.Cosan.Repository.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-02-28T17:20:19.9363500-03:00" queuing="2011-02-28T17:20:21.6183500-03:00" start="2011-02-28T17:20:21.7453500-03:00" finish="2011-02-28T17:20:32.8173500-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="24" executed="24" passed="17" error="0" failed="7" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ObterCategoriaTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="8f603d1f-ae94-8396-b8a5-04979bdf1657">
+      <Execution id="3c14996c-802b-45d7-b45a-969d06ac3534" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.CategoriaDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterCategoriaTest" />
+    </UnitTest>
+    <UnitTest name="GetParameterTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="96a24a21-a435-1604-02ee-5f244f8dffb1">
+      <Execution id="a6d5ab69-f9ce-4fe6-b09e-4b8fc920648b" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetParameterTest" />
+    </UnitTest>
+    <UnitTest name="BeginTransactionTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="fbe8ef5b-b342-f212-1d97-0b5e5b7ecd20">
+      <Execution id="ef6a964f-366f-4a9e-a4b5-a59589bce742" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BeginTransactionTest" />
+    </UnitTest>
+    <UnitTest name="ObterTrackingTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="451b66d5-fe4e-9ce7-49df-e7e25f3575ab">
+      <Execution id="1f375130-28fb-4306-a9d3-663d4214bf01" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.TrackingDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterTrackingTest" />
+    </UnitTest>
+    <UnitTest name="ListarWhereTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="5ca95352-9590-c9c5-c9e2-bf8d1e409678">
+      <Execution id="23ddae0d-d455-48fc-8aea-953ca97a37f3" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.ProdutoDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarWhereTest" />
+    </UnitTest>
+    <UnitTest name="ListarTodosNewslettersTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="fc75d301-86a5-542b-f4a8-655837c40e1d">
+      <Execution id="68b4dbdc-7349-4d36-a4e2-095dd7fb2ab4" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.NewsletterDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTodosNewslettersTest" />
+    </UnitTest>
+    <UnitTest name="AddParametersTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="8d168fec-3244-38f2-1191-f8d53f553082">
+      <Execution id="be262acc-6e5a-478b-836c-20751f313ddb" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddParametersTest" />
+    </UnitTest>
+    <UnitTest name="GetTransactionTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="d57e8bf8-2366-b27d-b68e-c6c062af8f94">
+      <Execution id="51c04c20-d100-41af-aacb-7afb84d3d0aa" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTransactionTest" />
+    </UnitTest>
+    <UnitTest name="DBManagerFactoryConstructorTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="3aace50b-f0d9-c7f6-a972-fd5f9714e3b9">
+      <DeploymentItems>
+        <DeploymentItem filename="Laboris.Cosan.DataAccessLayer.dll" />
+      </DeploymentItems>
+      <Execution id="1232ff09-e014-42e8-9e86-c086e14dc84f" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DBManagerFactoryConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ListarTodosCategoriasTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="0a3289dc-5b6a-0619-4474-7f65a983b8f4">
+      <Execution id="776f86d7-a6bb-4416-894f-51ad71406325" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.CategoriaDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTodosCategoriasTest" />
+    </UnitTest>
+    <UnitTest name="ListarTodosImagemProdutosTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="49bfcabe-b6e6-3575-99c0-705042ef4f28">
+      <Execution id="e7691f08-3409-4b94-b302-14f052410113" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.ImagemProdutoDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTodosImagemProdutosTest" />
+    </UnitTest>
+    <UnitTest name="ListarTodosParceirosTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="6b075ba1-f113-dbef-6b65-51af3c88d2a1">
+      <Execution id="3a36f039-d20f-4239-b70c-2a5037519d77" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.ParceiroDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTodosParceirosTest" />
+    </UnitTest>
+    <UnitTest name="ObterTrackingTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="a0a0ed05-fede-e496-0996-56e3970ec49d">
+      <Execution id="93a4d5ec-7e41-4520-9deb-52978dc1c9fb" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.ImagemProdutoDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterTrackingTest" />
+    </UnitTest>
+    <UnitTest name="ObterTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="55839e70-c54c-987c-0763-afbd7a137c18">
+      <Execution id="e44ff3c8-b8b0-41ec-b64e-0a14364df7f1" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.RebateDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterTest" />
+    </UnitTest>
+    <UnitTest name="ExecuteScalarTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="0ab6b81f-aee3-de9d-593d-dbf77e5877bc">
+      <Execution id="d418c4ac-6b32-4671-b8d1-1cf4b8381fb6" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ExecuteScalarTest" />
+    </UnitTest>
+    <UnitTest name="GetConnectionTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="86938829-112e-50c9-0848-a2ec05e113f5">
+      <Execution id="89ddecc1-31ae-4401-bf27-12dd8b290b44" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetConnectionTest" />
+    </UnitTest>
+    <UnitTest name="GetParametersTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="ec4002ae-ad9d-8ce2-df93-e67a8586f1ec">
+      <Execution id="1aa2bb9d-8e53-4f88-a00b-c49d66e2c99f" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetParametersTest" />
+    </UnitTest>
+    <UnitTest name="ListarTodosTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="a2b58af4-c957-53b5-397a-5fdcc4228958">
+      <Execution id="affeb0ce-7a43-446b-9066-545fd09ec7af" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.RebateDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTodosTest" />
+    </UnitTest>
+    <UnitTest name="ObterNewsletterTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="dd0b9086-2aed-c96c-f040-35283f2e8e62">
+      <Execution id="5e7d5d8d-19af-44be-b54c-7f95cea3632d" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.NewsletterDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterNewsletterTest" />
+    </UnitTest>
+    <UnitTest name="ListarTodosTrackingsTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="69665d57-11f1-3363-6530-d964c6eb2fc4">
+      <Execution id="cf8b045c-cf3c-4531-b3e9-0ff767ad0c1c" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.Repository.DAL.TrackingDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTodosTrackingsTest" />
+    </UnitTest>
+    <UnitTest name="ObterParceiroTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="0af41c71-c297-fe30-5273-2d1a82f677d9">
+      <Execution id="53462256-3bde-4a19-b1ae-5f3b412bc4c3" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.ParceiroDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterParceiroTest" />
+    </UnitTest>
+    <UnitTest name="ListarTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="0d4df1b5-9887-edf6-910a-6829c20b69e6">
+      <Execution id="8ab9a655-539f-46c8-8ea9-d8fe8e66cb22" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.ProdutoDALTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarTest" />
+    </UnitTest>
+    <UnitTest name="GetCommandTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="c3cdf165-c132-8d24-f8a4-533cadb27f1f">
+      <Execution id="c1a4f416-c645-40ae-94aa-7387830392c9" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCommandTest" />
+    </UnitTest>
+    <UnitTest name="GetDataAdapterTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="ff785716-baf7-1a57-a4d9-6706b4d8bfcb">
+      <Execution id="484e08f1-ac75-43e2-b1bd-0bee9a841bf9" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.DBManagerFactoryTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDataAdapterTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a3289dc-5b6a-0619-4474-7f65a983b8f4" executionId="776f86d7-a6bb-4416-894f-51ad71406325" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ab6b81f-aee3-de9d-593d-dbf77e5877bc" executionId="d418c4ac-6b32-4671-b8d1-1cf4b8381fb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0af41c71-c297-fe30-5273-2d1a82f677d9" executionId="53462256-3bde-4a19-b1ae-5f3b412bc4c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0d4df1b5-9887-edf6-910a-6829c20b69e6" executionId="8ab9a655-539f-46c8-8ea9-d8fe8e66cb22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3aace50b-f0d9-c7f6-a972-fd5f9714e3b9" executionId="1232ff09-e014-42e8-9e86-c086e14dc84f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="451b66d5-fe4e-9ce7-49df-e7e25f3575ab" executionId="1f375130-28fb-4306-a9d3-663d4214bf01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49bfcabe-b6e6-3575-99c0-705042ef4f28" executionId="e7691f08-3409-4b94-b302-14f052410113" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55839e70-c54c-987c-0763-afbd7a137c18" executionId="e44ff3c8-b8b0-41ec-b64e-0a14364df7f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ca95352-9590-c9c5-c9e2-bf8d1e409678" executionId="23ddae0d-d455-48fc-8aea-953ca97a37f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69665d57-11f1-3363-6530-d964c6eb2fc4" executionId="cf8b045c-cf3c-4531-b3e9-0ff767ad0c1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b075ba1-f113-dbef-6b65-51af3c88d2a1" executionId="3a36f039-d20f-4239-b70c-2a5037519d77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86938829-112e-50c9-0848-a2ec05e113f5" executionId="89ddecc1-31ae-4401-bf27-12dd8b290b44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d168fec-3244-38f2-1191-f8d53f553082" executionId="be262acc-6e5a-478b-836c-20751f313ddb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f603d1f-ae94-8396-b8a5-04979bdf1657" executionId="3c14996c-802b-45d7-b45a-969d06ac3534" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96a24a21-a435-1604-02ee-5f244f8dffb1" executionId="a6d5ab69-f9ce-4fe6-b09e-4b8fc920648b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0a0ed05-fede-e496-0996-56e3970ec49d" executionId="93a4d5ec-7e41-4520-9deb-52978dc1c9fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2b58af4-c957-53b5-397a-5fdcc4228958" executionId="affeb0ce-7a43-446b-9066-545fd09ec7af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c3cdf165-c132-8d24-f8a4-533cadb27f1f" executionId="c1a4f416-c645-40ae-94aa-7387830392c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d57e8bf8-2366-b27d-b68e-c6c062af8f94" executionId="51c04c20-d100-41af-aacb-7afb84d3d0aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd0b9086-2aed-c96c-f040-35283f2e8e62" executionId="5e7d5d8d-19af-44be-b54c-7f95cea3632d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec4002ae-ad9d-8ce2-df93-e67a8586f1ec" executionId="1aa2bb9d-8e53-4f88-a00b-c49d66e2c99f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbe8ef5b-b342-f212-1d97-0b5e5b7ecd20" executionId="ef6a964f-366f-4a9e-a4b5-a59589bce742" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc75d301-86a5-542b-f4a8-655837c40e1d" executionId="68b4dbdc-7349-4d36-a4e2-095dd7fb2ab4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff785716-baf7-1a57-a4d9-6706b4d8bfcb" executionId="484e08f1-ac75-43e2-b1bd-0bee9a841bf9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="776f86d7-a6bb-4416-894f-51ad71406325" testId="0a3289dc-5b6a-0619-4474-7f65a983b8f4" testName="ListarTodosCategoriasTest" computerName="LABDT-050" duration="00:00:03.8605787" startTime="2011-02-28T17:20:21.7883500-03:00" endTime="2011-02-28T17:20:26.0473500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="776f86d7-a6bb-4416-894f-51ad71406325">
+    </UnitTestResult>
+    <UnitTestResult executionId="d418c4ac-6b32-4671-b8d1-1cf4b8381fb6" testId="0ab6b81f-aee3-de9d-593d-dbf77e5877bc" testName="ExecuteScalarTest" computerName="LABDT-050" duration="00:00:00.2885627" startTime="2011-02-28T17:20:26.0563500-03:00" endTime="2011-02-28T17:20:26.3553500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d418c4ac-6b32-4671-b8d1-1cf4b8381fb6">
+    </UnitTestResult>
+    <UnitTestResult executionId="53462256-3bde-4a19-b1ae-5f3b412bc4c3" testId="0af41c71-c297-fe30-5273-2d1a82f677d9" testName="ObterParceiroTest" computerName="LABDT-050" duration="00:00:00.0437280" startTime="2011-02-28T17:20:26.3583500-03:00" endTime="2011-02-28T17:20:26.4093500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53462256-3bde-4a19-b1ae-5f3b412bc4c3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at Laboris.Cosan.TestProject.ParceiroDALTest.ObterParceiroTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\ParceiroDALTest.cs:line 59
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8ab9a655-539f-46c8-8ea9-d8fe8e66cb22" testId="0d4df1b5-9887-edf6-910a-6829c20b69e6" testName="ListarTest" computerName="LABDT-050" duration="00:00:00.2729834" startTime="2011-02-28T17:20:26.4223500-03:00" endTime="2011-02-28T17:20:26.7033500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ab9a655-539f-46c8-8ea9-d8fe8e66cb22">
+    </UnitTestResult>
+    <UnitTestResult executionId="1232ff09-e014-42e8-9e86-c086e14dc84f" testId="3aace50b-f0d9-c7f6-a972-fd5f9714e3b9" testName="DBManagerFactoryConstructorTest" computerName="LABDT-050" duration="00:00:00.0034500" startTime="2011-02-28T17:20:26.7073500-03:00" endTime="2011-02-28T17:20:26.7203500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1232ff09-e014-42e8-9e86-c086e14dc84f">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f375130-28fb-4306-a9d3-663d4214bf01" testId="451b66d5-fe4e-9ce7-49df-e7e25f3575ab" testName="ObterTrackingTest" computerName="LABDT-050" duration="00:00:00.0025190" startTime="2011-02-28T17:20:26.7243500-03:00" endTime="2011-02-28T17:20:26.7343500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f375130-28fb-4306-a9d3-663d4214bf01">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at Laboris.Cosan.TestProject.Repository.DAL.TrackingDALTest.ObterTrackingTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\TrackingDALTest.cs:line 44
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e7691f08-3409-4b94-b302-14f052410113" testId="49bfcabe-b6e6-3575-99c0-705042ef4f28" testName="ListarTodosImagemProdutosTest" computerName="LABDT-050" duration="00:00:00.3819473" startTime="2011-02-28T17:20:26.7363500-03:00" endTime="2011-02-28T17:20:27.1273500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7691f08-3409-4b94-b302-14f052410113">
+    </UnitTestResult>
+    <UnitTestResult executionId="e44ff3c8-b8b0-41ec-b64e-0a14364df7f1" testId="55839e70-c54c-987c-0763-afbd7a137c18" testName="ObterTest" computerName="LABDT-050" duration="00:00:00.0030335" startTime="2011-02-28T17:20:27.1293500-03:00" endTime="2011-02-28T17:20:27.1413500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e44ff3c8-b8b0-41ec-b64e-0a14364df7f1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at Laboris.Cosan.TestProject.Repository.DAL.RebateDALTest.ObterTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\RebateTest.cs:line 52
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="23ddae0d-d455-48fc-8aea-953ca97a37f3" testId="5ca95352-9590-c9c5-c9e2-bf8d1e409678" testName="ListarWhereTest" computerName="LABDT-050" duration="00:00:00.3772004" startTime="2011-02-28T17:20:27.1433500-03:00" endTime="2011-02-28T17:20:27.5443500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23ddae0d-d455-48fc-8aea-953ca97a37f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="cf8b045c-cf3c-4531-b3e9-0ff767ad0c1c" testId="69665d57-11f1-3363-6530-d964c6eb2fc4" testName="ListarTodosTrackingsTest" computerName="LABDT-050" duration="00:00:00.6344088" startTime="2011-02-28T17:20:27.5473500-03:00" endTime="2011-02-28T17:20:28.1873500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf8b045c-cf3c-4531-b3e9-0ff767ad0c1c">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a36f039-d20f-4239-b70c-2a5037519d77" testId="6b075ba1-f113-dbef-6b65-51af3c88d2a1" testName="ListarTodosParceirosTest" computerName="LABDT-050" duration="00:00:00.7808736" startTime="2011-02-28T17:20:28.1903500-03:00" endTime="2011-02-28T17:20:28.9833500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a36f039-d20f-4239-b70c-2a5037519d77">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Laboris.Cosan.TestProject.ParceiroDALTest.ListarTodosParceirosTest threw exception: 
+System.Data.SqlClient.SqlException: Invalid column name 'id'.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at Laboris.Cosan.DataAccessLayer.DBManager.ExecuteReader(CommandType commandType, String commandText) in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\DBManager.cs:line 184
+   at Laboris.Cosan.Repository.DAL.BaseDAL`1.Listar(String where) in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Repository\DAL\Base\BaseDAL.cs:line 45
+   at Laboris.Cosan.Repository.DAL.BaseDAL`1.Listar() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Repository\DAL\Base\BaseDAL.cs:line 25
+   at Laboris.Cosan.TestProject.ParceiroDALTest.ListarTodosParceirosTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\ParceiroDALTest.cs:line 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89ddecc1-31ae-4401-bf27-12dd8b290b44" testId="86938829-112e-50c9-0848-a2ec05e113f5" testName="GetConnectionTest" computerName="LABDT-050" duration="00:00:00.0038015" startTime="2011-02-28T17:20:28.9843500-03:00" endTime="2011-02-28T17:20:28.9953500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89ddecc1-31ae-4401-bf27-12dd8b290b44">
+    </UnitTestResult>
+    <UnitTestResult executionId="be262acc-6e5a-478b-836c-20751f313ddb" testId="8d168fec-3244-38f2-1191-f8d53f553082" testName="AddParametersTest" computerName="LABDT-050" duration="00:00:00.0066826" startTime="2011-02-28T17:20:29.0513500-03:00" endTime="2011-02-28T17:20:29.0673500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be262acc-6e5a-478b-836c-20751f313ddb">
+    </UnitTestResult>
+    <UnitTestResult executionId="3c14996c-802b-45d7-b45a-969d06ac3534" testId="8f603d1f-ae94-8396-b8a5-04979bdf1657" testName="ObterCategoriaTest" computerName="LABDT-050" duration="00:00:00.0035799" startTime="2011-02-28T17:20:29.0703500-03:00" endTime="2011-02-28T17:20:29.0813500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c14996c-802b-45d7-b45a-969d06ac3534">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at Laboris.Cosan.TestProject.Repository.DAL.CategoriaDALTest.ObterCategoriaTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\CategoriaDALTest.cs:line 52
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6d5ab69-f9ce-4fe6-b09e-4b8fc920648b" testId="96a24a21-a435-1604-02ee-5f244f8dffb1" testName="GetParameterTest" computerName="LABDT-050" duration="00:00:00.0004366" startTime="2011-02-28T17:20:29.0833500-03:00" endTime="2011-02-28T17:20:29.0973500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6d5ab69-f9ce-4fe6-b09e-4b8fc920648b">
+    </UnitTestResult>
+    <UnitTestResult executionId="93a4d5ec-7e41-4520-9deb-52978dc1c9fb" testId="a0a0ed05-fede-e496-0996-56e3970ec49d" testName="ObterTrackingTest" computerName="LABDT-050" duration="00:00:00.4777691" startTime="2011-02-28T17:20:29.1013500-03:00" endTime="2011-02-28T17:20:29.5843500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93a4d5ec-7e41-4520-9deb-52978dc1c9fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="affeb0ce-7a43-446b-9066-545fd09ec7af" testId="a2b58af4-c957-53b5-397a-5fdcc4228958" testName="ListarTodosTest" computerName="LABDT-050" duration="00:00:00.4625065" startTime="2011-02-28T17:20:29.5863500-03:00" endTime="2011-02-28T17:20:30.0583500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="affeb0ce-7a43-446b-9066-545fd09ec7af">
+    </UnitTestResult>
+    <UnitTestResult executionId="c1a4f416-c645-40ae-94aa-7387830392c9" testId="c3cdf165-c132-8d24-f8a4-533cadb27f1f" testName="GetCommandTest" computerName="LABDT-050" duration="00:00:00.0002056" startTime="2011-02-28T17:20:30.0603500-03:00" endTime="2011-02-28T17:20:30.0683500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1a4f416-c645-40ae-94aa-7387830392c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="51c04c20-d100-41af-aacb-7afb84d3d0aa" testId="d57e8bf8-2366-b27d-b68e-c6c062af8f94" testName="GetTransactionTest" computerName="LABDT-050" duration="00:00:00.7764044" startTime="2011-02-28T17:20:30.0713500-03:00" endTime="2011-02-28T17:20:30.8573500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51c04c20-d100-41af-aacb-7afb84d3d0aa">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e7d5d8d-19af-44be-b54c-7f95cea3632d" testId="dd0b9086-2aed-c96c-f040-35283f2e8e62" testName="ObterNewsletterTest" computerName="LABDT-050" duration="00:00:00.0023474" startTime="2011-02-28T17:20:30.8603500-03:00" endTime="2011-02-28T17:20:30.8693500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e7d5d8d-19af-44be-b54c-7f95cea3632d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at Laboris.Cosan.TestProject.Repository.DAL.NewsletterDALTest.ObterNewsletterTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\NewsletterDALTest.cs:line 44
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1aa2bb9d-8e53-4f88-a00b-c49d66e2c99f" testId="ec4002ae-ad9d-8ce2-df93-e67a8586f1ec" testName="GetParametersTest" computerName="LABDT-050" duration="00:00:00.0034177" startTime="2011-02-28T17:20:30.8713500-03:00" endTime="2011-02-28T17:20:30.8843500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1aa2bb9d-8e53-4f88-a00b-c49d66e2c99f">
+    </UnitTestResult>
+    <UnitTestResult executionId="ef6a964f-366f-4a9e-a4b5-a59589bce742" testId="fbe8ef5b-b342-f212-1d97-0b5e5b7ecd20" testName="BeginTransactionTest" computerName="LABDT-050" duration="00:00:00.2182514" startTime="2011-02-28T17:20:30.8873500-03:00" endTime="2011-02-28T17:20:31.1123500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef6a964f-366f-4a9e-a4b5-a59589bce742">
+    </UnitTestResult>
+    <UnitTestResult executionId="68b4dbdc-7349-4d36-a4e2-095dd7fb2ab4" testId="fc75d301-86a5-542b-f4a8-655837c40e1d" testName="ListarTodosNewslettersTest" computerName="LABDT-050" duration="00:00:00.1212753" startTime="2011-02-28T17:20:31.1363500-03:00" endTime="2011-02-28T17:20:31.2753500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="68b4dbdc-7349-4d36-a4e2-095dd7fb2ab4">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Laboris.Cosan.TestProject.Repository.DAL.NewsletterDALTest.ListarTodosNewslettersTest threw exception: 
+System.Data.SqlClient.SqlException: Invalid column name 'idParceiro'.
+Invalid column name 'nome'.
+Invalid column name 'dataCadastro'.
+Invalid column name 'percentualPreco'.
+Invalid column name 'percentualPontos'.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at Laboris.Cosan.DataAccessLayer.DBManager.ExecuteReader(CommandType commandType, String commandText) in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\DBManager.cs:line 184
+   at Laboris.Cosan.Repository.DAL.BaseDAL`1.Listar(String where) in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Repository\DAL\Base\BaseDAL.cs:line 45
+   at Laboris.Cosan.Repository.DAL.BaseDAL`1.Listar() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Repository\DAL\Base\BaseDAL.cs:line 25
+   at Laboris.Cosan.TestProject.Repository.DAL.NewsletterDALTest.ListarTodosNewslettersTest() in C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.TestProject\Repository\DAL\NewsletterDALTest.cs:line 34
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="484e08f1-ac75-43e2-b1bd-0bee9a841bf9" testId="ff785716-baf7-1a57-a4d9-6706b4d8bfcb" testName="GetDataAdapterTest" computerName="LABDT-050" duration="00:00:00.0028328" startTime="2011-02-28T17:20:31.2773500-03:00" endTime="2011-02-28T17:20:31.2893500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="484e08f1-ac75-43e2-b1bd-0bee9a841bf9">
+    </UnitTestResult>
+  </Results>
+</TestRun>

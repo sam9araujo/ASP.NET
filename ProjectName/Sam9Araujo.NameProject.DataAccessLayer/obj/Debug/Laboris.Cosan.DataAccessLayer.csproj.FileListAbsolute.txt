@@ -1,0 +1,7 @@
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.Domain.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.Domain.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\obj\Debug\Laboris.Cosan.DataAccessLayer.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\obj\Debug\Laboris.Cosan.DataAccessLayer.pdb

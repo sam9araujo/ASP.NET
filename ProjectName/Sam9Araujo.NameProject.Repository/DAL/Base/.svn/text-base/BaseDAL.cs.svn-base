@@ -1,0 +1,167 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.DataAccessLayer;
+using System.Configuration;
+
+namespace Laboris.Cosan.Repository.DAL
+{
+    public abstract class BaseDAL<T> : IBaseDAL<T> where T : IDomain
+    {
+        internal readonly string ConnectionString = ConfigurationManager.AppSettings["ConnectionString"];
+
+        public abstract string SqlSELECT
+        {
+            get;
+        }
+
+        public abstract string SqlINSERT
+        {
+            get;
+        }
+
+        public abstract string SqlUPDATE
+        {
+            get;
+        }
+
+        public abstract string SqlDELETE
+        {
+            get;
+        }
+
+        public abstract string SqlWhereKey
+        {
+            get;
+        }
+
+        public IList<T> Listar()
+        {
+            return this.QueryExecute(this.SqlSELECT);
+        }
+
+        public IList<T> Listar(string where)
+        {
+            string sql = this.SqlSELECT;
+
+            if (where != string.Empty && where != "")
+                sql += " WHERE " + where;
+
+            return this.QueryExecute(sql);
+        }
+
+        public IList<T> QueryExecute(string sqlQuery, CommandType cmdType = CommandType.Text, IDbDataParameter[] parameters = null)
+        {
+            List<T> listT = new List<T>();
+
+            T t = default(T);
+
+            using (IDBManager dbManager = new DBManager(ConnectionString))
+            {
+                dbManager.Open();
+                dbManager.Parameters = parameters;
+                {
+                    IDataReader dr = dbManager.ExecuteReader(cmdType, sqlQuery);
+                    {
+                        while (dr.Read())
+                        {
+                            t = this.Factory(dr);
+                            listT.Add(t);
+                        }
+                    }
+                    dbManager.CloseReader();
+
+                    if (!dr.IsClosed)
+                        dr.Close();
+                }
+                dbManager.Close();
+            }
+
+            this.ExecuteIncludes(listT);
+
+            return listT;
+        }
+
+        public T Obter(string where)
+        {
+            IList<T> listT = this.Listar(where);
+
+            if (listT.Count > 0)
+                return listT[0];
+            else
+                return default(T);
+        }
+
+        public abstract T Factory(IDataReader DataReader);
+
+        public int Insert(T t)
+        {
+            IDbDataParameter[] dataParameters = this.PrepareParametersFactory(t);
+            return this.ChangeDatabase(this.SqlINSERT, dataParameters);
+        }
+
+        public int Update(T t)
+        {
+            IDbDataParameter[] dataParameters = this.PrepareParametersFactory(t, true);
+            return this.ChangeDatabase(this.SqlUPDATE + " WHERE " + this.SqlWhereKey, dataParameters);
+        }
+
+        public int Update(string where)
+        {
+            if (where != string.Empty && where != "")
+                return this.ChangeDatabase(this.SqlUPDATE + " WHERE " + where);
+            else
+                return 0;
+        }
+
+        public int Delete(T t)
+        {
+            IDbDataParameter[] dataParameters = this.PrepareParametersKeyFactory(t);
+            return this.ChangeDatabase(this.SqlDELETE + " WHERE " + this.SqlWhereKey, dataParameters);
+        }
+
+        public int Delete(string where)
+        {
+            if (where != string.Empty && where != "")
+                return this.ChangeDatabase(this.SqlDELETE + " WHERE " + where);
+            else
+                return 0;
+        }
+
+        public void Include() { }
+
+        internal abstract void ExecuteIncludes(List<T> listT);
+
+        internal abstract IDbDataParameter[] PrepareParametersFactory(T t, bool includeKeys = false);
+
+        internal abstract IDbDataParameter[] PrepareParametersKeyFactory(T t);
+
+        internal int ChangeDatabase(string commandText, IDbDataParameter[] parameters)
+        {
+            int ret = 0;
+
+            IDBManager dbManager = new DBManager(ConnectionString);
+
+            dbManager.Open();
+            dbManager.Parameters = parameters;
+            ret = dbManager.ExecuteNonQuery(CommandType.Text, commandText);
+            dbManager.Close();
+
+            return ret;
+        }
+
+        internal int ChangeDatabase(string commandText)
+        {
+            return this.ChangeDatabase(commandText, null);
+        }
+
+        public IDbDataParameter[] GetParameters(int paramsCount)
+        {
+            return DBManagerFactory.GetParameters(DataProvider.SqlServer, paramsCount);
+        }
+    }
+}
+

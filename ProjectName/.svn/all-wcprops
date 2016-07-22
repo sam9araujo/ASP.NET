@@ -1,0 +1,39 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 22
+/svn/cosanv2/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/cosanv2/!svn/ver/238/trunk/src
+END
+Laboris.Cosan1.vsmdi
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan1.vsmdi
+END
+Laboris.Cosan.sln
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cosanv2/!svn/ver/201/trunk/src/Laboris.Cosan.sln
+END
+Local.testsettings
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cosanv2/!svn/ver/10/trunk/src/Local.testsettings
+END
+Laboris.Cosan.vsmdi
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.vsmdi
+END
+TraceAndTestImpact.testsettings
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cosanv2/!svn/ver/10/trunk/src/TraceAndTestImpact.testsettings
+END

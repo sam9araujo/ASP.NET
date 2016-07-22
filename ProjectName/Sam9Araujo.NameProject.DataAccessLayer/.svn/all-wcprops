@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.DataAccessLayer
+END
+Laboris.Cosan.DataAccessLayer.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.DataAccessLayer/Laboris.Cosan.DataAccessLayer.csproj
+END
+DBManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.DataAccessLayer/DBManager.cs
+END
+DBManagerFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.DataAccessLayer/DBManagerFactory.cs
+END
+IDBManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/25/trunk/src/Laboris.Cosan.DataAccessLayer/IDBManager.cs
+END

@@ -1,0 +1,177 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Sam9araujo.NameProject.Domain;
+using Sam9araujo.NameProject.DataAccessLayer;
+using System.Configuration;
+
+namespace Sam9araujo.NameProject.Repository.DAL
+{
+    public class AmbienteDAL : BaseDAL<Ambiente>
+    {
+        private ParceiroDAL _parceiroDAL;
+        private CategoriaDAL _categoriaDAL;
+
+        public ParceiroDAL ParceiroDAL
+        {
+            get
+            {
+                if (_parceiroDAL == null)
+                    _parceiroDAL = new ParceiroDAL();
+
+                return _parceiroDAL;
+            }
+        }
+
+        public CategoriaDAL CategoriaDAL
+        {
+            get
+            {
+                if (_categoriaDAL == null)
+                    _categoriaDAL = new CategoriaDAL();
+
+                return _categoriaDAL;
+            }
+        }
+
+        public override string SqlSELECT
+        {
+            get { return QuerysSQL.selectAmbiente; }
+        }
+
+        public override string SqlINSERT
+        {
+            get { return QuerysSQL.insertAmbiente; }
+
+        }
+
+        public override string SqlUPDATE
+        {
+            get { return QuerysSQL.updateAmbiente; }
+
+        }
+
+        public override string SqlDELETE
+        {
+            get { return QuerysSQL.deleteAmbiente; }
+
+        }
+
+        public override string SqlWhereKey
+        {
+            get { return QuerysSQL.whereKeyAmbiente; }
+        }
+
+        internal override void ExecuteIncludes(List<Ambiente> ambiente)
+        {
+            for (int i = 0; i < ambiente.Count; i++)
+            {
+                if (_parceiroDAL != null)
+                    ambiente[i].Parceiros = _parceiroDAL.ListarPorAmbiente(ambiente[i].IdAmbiente);
+
+                if (_categoriaDAL != null)
+                    ambiente[i].Categorias = _categoriaDAL.ListarPorAmbiente(ambiente[i].IdAmbiente);
+            }
+        }
+
+        internal override IDbDataParameter[] PrepareParametersFactory(Ambiente ambiente, bool includeKeys = false)
+        {
+            IDbDataParameter[] dataParameters;
+
+            if (includeKeys)
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 9);
+            else
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 8);
+            
+            dataParameters[0].ParameterName = "idAmbiente";
+            dataParameters[0].DbType = DbType.Int32;
+            dataParameters[0].Value = ambiente.IdAmbiente;
+
+            dataParameters[1].ParameterName = "descricao";
+            dataParameters[1].DbType = DbType.String;
+            dataParameters[1].Value = ambiente.Descricao;
+
+            dataParameters[2].ParameterName = "dataCadastro";
+            dataParameters[2].DbType = DbType.DateTime;
+            dataParameters[2].Value = ambiente.DataCadastro;
+
+            dataParameters[3].ParameterName = "mostra";
+            dataParameters[3].DbType = DbType.Boolean;
+            dataParameters[3].Value = ambiente.Mostra;
+
+            dataParameters[4].ParameterName = "imagemGrd";
+            dataParameters[4].DbType = DbType.String;
+            dataParameters[4].Value = ambiente.ImagemGrd;
+
+            dataParameters[5].ParameterName = "imagemPeq";
+            dataParameters[5].DbType = DbType.String;
+            dataParameters[5].Value = ambiente.ImagemPeq;
+
+            dataParameters[6].ParameterName = "cssClassStyle";
+            dataParameters[6].DbType = DbType.String;
+            dataParameters[6].Value = ambiente.CssClassStyle;
+
+            dataParameters[7].ParameterName = "imagemBanner";
+            dataParameters[7].DbType = DbType.String;
+            dataParameters[7].Value = ambiente.ImagemBanner;
+
+            if (includeKeys)
+            {
+                keyMethod(ambiente, dataParameters, 8);
+            }
+            return dataParameters;
+        }
+
+        private static void keyMethod(Ambiente ambiente, IDbDataParameter[] dataParameters, int i)
+        {
+            dataParameters[i].ParameterName = "idAmbienteKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = ambiente.IdAmbiente;
+        }
+
+        internal override IDbDataParameter[] PrepareParametersKeyFactory(Ambiente ambiente)
+        {
+            IDbDataParameter[] dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 1);
+
+            keyMethod(ambiente, dataParameters, 0);
+            
+            return dataParameters;
+        }
+
+        public AmbienteDAL()
+        {
+            
+        }
+
+        public override Ambiente Factory(IDataReader DataReader)
+        {
+            Ambiente Ambiente = new Ambiente();
+            {
+                Ambiente.IdAmbiente = int.Parse(DataReader["idAmbiente"].ToString());
+                Ambiente.Descricao= DataReader["descricao"].ToString();
+                Ambiente.DataCadastro = DateTime.Parse(DataReader["dataCadastro"].ToString());
+                Ambiente.Mostra = bool.Parse(DataReader["mostra"].ToString());
+                Ambiente.ImagemGrd = DataReader["imagemGrd"].ToString();
+                Ambiente.ImagemPeq = DataReader["imagemPeq"].ToString();
+                Ambiente.CssClassStyle = DataReader["cssClassStyle"].ToString();
+                Ambiente.ImagemBanner = DataReader["imagemBanner"].ToString();
+            }
+            return Ambiente;
+        }
+
+        public IList<Ambiente> ListarPorCategoria(int idCategoria)
+        {
+            string sql = this.SqlSELECT + " INNER JOIN AMBIENTE_CATEGORIA ON AMBIENTE.idAmbiente = AMBIENTE_CATEGORIA.idAmbiente WHERE idCategoria = " + idCategoria;
+            return this.QueryExecute(sql);
+        }
+
+        public IList<Ambiente> ListarPorParceiro(int idParceiro)
+        {
+            string sql = this.SqlSELECT + " INNER JOIN AMBIENTE_PARCEIRO ON AMBIENTE.idAmbiente = AMBIENTE_PARCEIRO.idAmbiente WHERE idParceiro = " + idParceiro;
+            return this.QueryExecute(sql);
+        }
+    }
+}
+

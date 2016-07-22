@@ -1,0 +1,149 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Sam9araujo.NameProject.Domain;
+using Sam9araujo.NameProject.DataAccessLayer;
+using System.Configuration;
+
+namespace Sam9araujo.NameProject.Repository.DAL
+{
+    public class ImagemProdutoDAL : BaseDAL<ImagemProduto>
+    {
+        private ProdutoDAL _produtoDAL;
+
+        public ProdutoDAL ProdutoDAL
+        {
+            get
+            {
+                if (_produtoDAL == null)
+                    _produtoDAL = new ProdutoDAL();
+
+                return _produtoDAL;
+            }
+        }
+
+        public override string SqlSELECT
+        {
+            get { return QuerysSQL.selectImagem; }
+        }
+
+        public override string SqlINSERT
+        {
+            get { return QuerysSQL.insertImagem; }
+        }
+
+        public override string SqlUPDATE
+        {
+            get { return QuerysSQL.updateImagem; }
+        }
+
+        public override string SqlDELETE
+        {
+            get { return QuerysSQL.deleteImagem; }
+        }
+
+        public override string SqlWhereKey
+        {
+            get { return QuerysSQL.whereKeyImagem; }
+        }
+
+        internal override void ExecuteIncludes(List<ImagemProduto> imagemProduto)
+        {
+            if (_produtoDAL != null)
+            {
+                for (int i = 0; i < imagemProduto.Count; i++)
+                    imagemProduto[i].Produto = _produtoDAL.Listar("idParceiro = " + imagemProduto[i].IdParceiro)[0];
+            }
+        }
+
+        internal override IDbDataParameter[] PrepareParametersFactory(ImagemProduto imagemProduto, bool includeKeys = false)
+        {
+            IDbDataParameter[] dataParameters;
+
+            if (includeKeys)
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 7);
+            else
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 4);
+            
+            //dataParameters[0].ParameterName = "idImagem";
+            //dataParameters[0].DbType = DbType.Int32;
+            //dataParameters[0].Value = imagemProduto.IdImagem;
+
+            dataParameters[0].ParameterName = "imagem";
+            dataParameters[0].DbType = DbType.String;
+            dataParameters[0].Value = imagemProduto.Imagem;
+
+            dataParameters[1].ParameterName = "dataCadastro";
+            dataParameters[1].DbType = DbType.DateTime;
+            dataParameters[1].Value = imagemProduto.DataCadastro;
+
+            dataParameters[2].ParameterName = "idParceiro";
+            dataParameters[2].DbType = DbType.Int32;
+            dataParameters[2].Value = imagemProduto.IdParceiro;
+
+            dataParameters[3].ParameterName = "idProduto";
+            dataParameters[3].DbType = DbType.Decimal;
+            dataParameters[3].Value = imagemProduto.IdProduto;
+
+            if (includeKeys)
+            {
+                int i = 4;
+
+                keyMethod(imagemProduto, dataParameters, i);
+            }
+       
+            return dataParameters;
+        }
+
+        private static void keyMethod(ImagemProduto imagemProduto, IDbDataParameter[] dataParameters, int i)
+        {
+            dataParameters[i].ParameterName = "idImagemKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = imagemProduto.IdImagem;
+
+            i++;
+
+            dataParameters[i].ParameterName = "idParceiroKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = imagemProduto.IdParceiro;
+
+            i++;
+
+            dataParameters[i].ParameterName = "idProdutoKey";
+            dataParameters[i].DbType = DbType.Int32;
+            dataParameters[i].Value = imagemProduto.IdProduto;
+        }
+
+        internal override IDbDataParameter[] PrepareParametersKeyFactory(ImagemProduto imagemProduto)
+        {
+            IDbDataParameter[] dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 3);
+
+            int i = 0;
+
+            keyMethod(imagemProduto, dataParameters, i);
+            
+            return dataParameters;
+        }
+
+        public ImagemProdutoDAL()
+        {
+
+        }
+
+        public override ImagemProduto Factory(IDataReader DataReader)
+        {
+            ImagemProduto imagemproduto = new ImagemProduto();
+            {
+                imagemproduto.IdImagem = int.Parse(DataReader["idImagem"].ToString());
+                imagemproduto.Imagem = DataReader["imagem"].ToString();
+                imagemproduto.DataCadastro = DateTime.Parse(DataReader["dataCadastro"].ToString());
+                imagemproduto.IdProduto = int.Parse(DataReader["idProduto"].ToString());
+                imagemproduto.IdParceiro = int.Parse(DataReader["idParceiro"].ToString());
+            }
+            return imagemproduto;
+        }
+
+    }
+}

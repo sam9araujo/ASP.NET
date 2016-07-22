@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service
+END
+Cryptography.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cosanv2/!svn/ver/117/trunk/src/Laboris.Cosan.Service/Cryptography.cs
+END
+OmnionClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/OmnionClass.cs
+END
+Laboris.Cosan.Service.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service/Laboris.Cosan.Service.csproj
+END
+AppSettingsObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service/AppSettingsObject.cs
+END
+XmlToObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/XmlToObject.cs
+END

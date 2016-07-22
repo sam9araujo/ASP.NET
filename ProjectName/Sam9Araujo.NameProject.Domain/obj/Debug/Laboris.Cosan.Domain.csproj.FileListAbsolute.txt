@@ -1,0 +1,5 @@
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.Domain\bin\Debug\Sam9araujo.NameProject.Domain.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.Domain\bin\Debug\Sam9araujo.NameProject.Domain.pdb
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.Domain\obj\Debug\Sam9araujo.NameProject.Domain.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.Domain\obj\Debug\Sam9araujo.NameProject.Domain.pdb

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Contracts
+END
+InterfacePoints.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Contracts/InterfacePoints.cs
+END
+InterfaceCustomer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Contracts/InterfaceCustomer.cs
+END
+InterfaceStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Contracts/InterfaceStatus.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service.WebService/Contracts/Enums.cs
+END

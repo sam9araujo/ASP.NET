@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="49148cfd-722f-417d-a14f-7a3393c47ac4" name="bruno.dalessio@LABDT-050 2011-03-24 16:07:35" runUser="DOMAIN-LABORIS\bruno.dalessio" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7ce90a30-94f0-421a-97c8-ad1989b9e664">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="bruno.dalessio_LABDT-050 2011-03-24 16_07_35">
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Service.WebService\bin\Laboris.Fast.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Repository\bin\Debug\Laboris.Cosan.Repository.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Service\bin\Debug\Laboris.Cosan.Service.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Domain\bin\Debug\Laboris.Cosan.Domain.dll" />
+      <DeploymentItem filename="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Service.WebService\bin\Laboris.Cosan.Service.WebService.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-03-24T16:07:35.1523328-03:00" queuing="2011-03-24T16:07:36.9743328-03:00" start="2011-03-24T16:07:37.1823328-03:00" finish="2011-03-24T16:08:03.3033328-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetPointsTest" storage="c:\cosanv2\projeto\cosanv2\trunk\src\laboris.cosan.testproject\bin\debug\laboris.cosan.testproject.dll" id="41421138-471b-aeb3-88d7-3b208ec2340a">
+      <Execution id="0d2c2841-612f-4ce8-8af7-6f4443a7ad5c" />
+      <TestMethod codeBase="C:/CosanV2/Projeto/cosanv2/trunk/src/Laboris.Cosan.TestProject/bin/Debug/Laboris.Cosan.TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Laboris.Cosan.TestProject.LoginTest, Laboris.Cosan.TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPointsTest" />
+      <AspNet webSiteUrl="http://localhost:52592/login.asmx">
+        <Host pathToWebApp="C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.Service.WebService" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="41421138-471b-aeb3-88d7-3b208ec2340a" executionId="0d2c2841-612f-4ce8-8af7-6f4443a7ad5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0d2c2841-612f-4ce8-8af7-6f4443a7ad5c" testId="41421138-471b-aeb3-88d7-3b208ec2340a" testName="GetPointsTest" computerName="LABDT-050" startTime="2011-03-24T16:07:37.5473328-03:00" endTime="2011-03-24T16:08:03.0783328-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d2c2841-612f-4ce8-8af7-6f4443a7ad5c">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:52592/login.asmx' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_GetPointsTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LABDT-050\WebRequestResponse_GetPointsTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 93
+*.user
+bin
+obj
+[Bb]in
+[Dd]ebug
+[Rr]elease
+*.aps
+*.eto
+Laboris.Cosan.UI.ViewAdmin.Publish.xml
+
+END

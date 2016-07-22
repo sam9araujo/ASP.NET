@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B8693D2-89BA-4664-95F3-1BFDEB8A0A67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laboris.Cosan.Service</RootNamespace>
+    <AssemblyName>Laboris.Cosan.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSettingsObject.cs" />
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="OmnionClass.cs" />
+    <Compile Include="Omnion\Entidades\Cancelamento.cs" />
+    <Compile Include="Omnion\Entidades\Login.cs" />
+    <Compile Include="Omnion\Entidades\Pedido.cs" />
+    <Compile Include="Omnion\Entidades\Troca.cs" />
+    <Compile Include="Omnion\Entidades\ProdutoBag.cs" />
+    <Compile Include="Omnion\Entidades\UsuarioPedido.cs" />
+    <Compile Include="Omnion\Entidades\UsuarioProduto.cs" />
+    <Compile Include="Omnion\CancelamentoWrapper.cs" />
+    <Compile Include="Omnion\LoginWrapper.cs" />
+    <Compile Include="Omnion\PedidoWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlToObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sam9Araujo.NameProject.DataAccessLayer\Sam9Araujo.NameProject.DataAccessLayer.csproj">
+      <Project>{6B2C7C9D-0DE9-4FAA-A305-4C4D82D754DC}</Project>
+      <Name>Sam9Araujo.NameProject.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sam9Araujo.NameProject.Domain\Sam9Araujo.NameProject.Domain.csproj">
+      <Project>{188EEBE4-20F6-4E8A-8F00-0290ACB86220}</Project>
+      <Name>Sam9Araujo.NameProject.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sam9Araujo.NameProject.Repository\Sam9Araujo.NameProject.Repository.csproj">
+      <Project>{B89EEBFA-CA72-4042-B60F-7E5834E7005B}</Project>
+      <Name>Sam9Araujo.NameProject.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

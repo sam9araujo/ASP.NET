@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Domain/Base
+END
+IBaseDomain.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Domain/Base/IBaseDomain.cs
+END
+IDomain.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Domain/Base/IDomain.cs
+END
+BaseDomain.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Domain/Base/BaseDomain.cs
+END

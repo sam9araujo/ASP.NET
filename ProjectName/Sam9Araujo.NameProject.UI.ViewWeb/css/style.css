@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+/*******************************************
+				   Globais
+*******************************************/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, button, input, select, textarea { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+html { overflow-y: scroll; *overflow:visible; overflow-x:hidden;}
+body { font:13px/1.231 sans-serif; font-size:small; }
+body, select, input, textarea, p { color: #444; }
+
+outline { border:none; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+ol { list-style-type: decimal; }
+table { border-collapse:collapse; border-spacing:0; }
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+pre {  padding: 15px;  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  word-wrap: break-word; }
+strong { font-weight: bold; }
+small { font-size: 85%; }
+
+select, input, textarea, button { font:99% sans-serif; }
+input, select { vertical-align:middle; }
+textarea { overflow: auto; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; text-decoration:none; }
+::-moz-selection{ background: #444; color:#fff; text-shadow: none; }
+::selection { background:#444; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #444; }
+
+.in {float:left; width:950px; position:relative; left:50%; margin-left: -475px;}
+
+/*******************************************
+				   Topo
+*******************************************/
+
+#topo {float:left; width:100%; height:115px; background: url("../img/bgtopo.png") repeat-x left top;} /*height:97px*/
+#topo .in > a {float:left; margin-top: 20px;}
+#topo .in {z-index:90;}
+
+#login {float:left; width:440px; padding: 0 10px; height:97px; background: url("../img/bgform.png") no-repeat left top; margin-left:25px;}
+#login p {float:left; width:100%; color:#004786; font: normal 11px/14px Arial, sans-serif; margin: 10px 0 0 0;}
+#login div {float:left; width:100%; margin:0 0 5px 0;}
+#login div input.cpf, #login div input.senha {float:left; margin-top:3px; width: 178px; padding: 5px 7px; margin-right: 5px; font: normal 12px/16px Arial, sans-serif; color:#767676; background: url("../img/icons.png") no-repeat -18px -32px;}
+
+#login.logado p {float:left; width:100%; color:#767676; font: normal 12px/14px Arial, sans-serif;}
+#login.logado span {float:left; padding: 0 0 0 25px; background: url("../img/titside.png") no-repeat left top; font: normal 14px/22px Arial, sans-serif; margin: 10px 0; width: 400px; color:#004786;}
+#login.logado a {color: #004786; float: left; font: 11px/16px Arial,sans-serif; padding-left:7px; background: url("../img/seta.png") no-repeat left center;}
+
+#topo .in > ul {float:left; list-style:none; margin: 33px 0 0 10px;}
+#topo .in > ul > li {float:left; position:relative; background: url("../img/menudiv.png") no-repeat left center; padding: 5px 0 5px 7px;}
+#topo .in > ul > li > a {float:left; color:#006da8; font: normal 13px/20px Arial, sans-serif;}
+#topo .in > ul > li.home {background-position: right center; padding: 5px 8px 5px 0;}
+#topo .in > ul > li.menu {background:none;padding: 5px 3px 5px 4px;}
+#topo .in > ul > li.menu > a {padding-right: 20px; background: url("../img/icons.png") no-repeat 36px -35px; position:relative; z-index:999;}
+
+#topo ul div {float:left; display:none; z-index:99; position: absolute; top:-2px; left:-7px; width:128px; background: url("../img/submenu.png") no-repeat left top}
+#topo ul div ul {float:left; width:100%; margin-top: 37px; list-style:none; background: url("../img/submenubottom.png") no-repeat left bottom; padding-bottom:10px; margin-bottom:-10px;}
+#topo ul div ul li {float:left; width:100%; margin-bottom:3px;}
+#topo ul div ul li a {float:left; margin-left:12px;color:#575757; font: normal 12px/18px Arial, sans-serif;}
+#topo ul div ul li a:hover {text-decoration:underline;}
+
+#topo .in ul + a {float:right;}
+
+/*******************************************
+				   Rodape
+*******************************************/
+
+#rodape {float:left; width:100%; height:222px; background: url("../img/bgrodape.png") repeat-x left top;}
+#rodape .in > span {float:left; width:100%; text-transform:uppercase; color:#fff;font: bold 24px/36px Arial, sans-serif; letter-spacing:-1px; text-align:center;}
+
+#menuroda {float:left; width:100%; height: 135px; margin-top: 3px;}
+#menuroda div {float:left; height:115px; padding: 0 16px; border-left: 1px solid #bebebe; margin-top:10px;}
+#menuroda div:first-child {border:none;}
+#menuroda div h1 {color:#144b8e; font: bold 13px/17px Arial, sans-serif; margin-bottom:5px;}
+#menuroda div ul {list-style:none;}
+#menuroda div ul li {margin-bottom: 1px;}
+#menuroda div ul li a {color:#575757; font: normal 12px/16px Arial, sans-serif;}
+#menuroda div p {color:#575757; font: normal 12px/16px Arial, sans-serif;}
+#menuroda div p strong {font: bold 15px/18px Arial, sans-serif;}
+
+#credito {float:left; width:100%; height:48px; text-align:center; color:#fff; font: normal 12px/48px Arial, sans-serif;}
+#credito img {float:left; margin-top:7px;}
+#credito .imgEsso{float:left; margin-top:-35px; margin-left:800px;}
+
+/*******************************************
+				   Slide
+*******************************************/
+
+#slide {float:left; width:100%;}
+.hid {float:left;width:949px; height:275px; background: url("../img/bgslide.png") repeat-x left top; display:none;}
+.home .hid {display:block;}
+#slide .fechado, #slide .aberto {float:left; width:949px; height:19px; padding: 4px 0; background: url("../img/slide.png") no-repeat right top; cursor:pointer; text-align:center; color:#fff; text-transform:uppercase; font: bold 15px/18px Arial, sans-serif; margin-bottom:20px;}
+.hid + div.fechado span {font: normal 10px/14px Arial, sans-serif; text-transform:lowercase;margin:0 5px; padding: 0 18px; vertical-align:top; background: url("../img/setaslide.png") no-repeat right -19px;}
+.hid + div.fechado span + span {background-position: left -19px;}
+.hid + div.aberto span {font: normal 10px/14px Arial, sans-serif; text-transform:lowercase;margin:0 5px; padding: 0 18px; vertical-align:top; background: url("../img/setaslide.png") no-repeat right 2px;}
+.hid + div.aberto span + span {background-position: left 2px;}
+
+.hid > div {float:left; position:relative; height:251px; padding: 2px 5px; background: url("../img/slide/bg.png") no-repeat left top;margin: 15px 0 0 0;}
+
+#um {width:228px; margin-left:10px;}
+#dois {width:281px; background-position: -238px top;}
+#dois1 {width:281px; background-position: -238px top;}
+#tres {width:392px;background-position: right top;}
+
+.dizainmenu, .dizaindoismenu {float:left; position: absolute; z-index:999; right: 6px; bottom: 10px;}
+.dizainmenu ul, .dizaindoismenu ul { list-style:none;}
+.dizainmenu li, .dizaindoismenu li {float:left; width: 20px; text-align: center; list-style:none; margin-left:2px; cursor:pointer; color:#fff; font: bold 13px/20px Arial, sans-serif; background: url("../img/slide/menu.png") no-repeat left top;}
+.dizainmenu li.dizainativo, .dizaindoismenu li.dizaindoisativo {background-position: right top;}
+
+#dois > div img {float:left;}
+#dois > div div {float:right; width:125px;}
+#dois > div div h1 {float:left; width:100%; color:#00577b; font: bold 13px/16px Arial, sans-serif; text-transform:uppercase; margin-top:18px; }
+#dois > div div ul {float:left; width:100%; list-style:none;margin-top:3px;}
+#dois > div div ul li {color:#00577b; font: normal 12px/16px Arial, sans-serif;}
+#dois > div div p {float:left; width:100%;margin-top:10px;color:#000; font: normal 12px/16px Arial, sans-serif; text-transform:uppercase;}
+#dois > div div span {float:left; width:100%; color:#ba0011; font: normal 28px/32px Arial, sans-serif;letter-spacing: -2px;}
+#dois > div div a {float:left; margin-top: 10px;}
+
+#dois1 > div img {float:left;}
+#dois1 > div div {float:right; width:125px;}
+#dois1 > div div h1 {float:left; width:100%; color:#00577b; font: bold 13px/16px Arial, sans-serif; text-transform:uppercase; margin-top:18px; }
+#dois1 > div div ul {float:left; width:100%; list-style:none;margin-top:3px;}
+#dois1 > div div ul li {color:#00577b; font: normal 12px/16px Arial, sans-serif;}
+#dois1 > div div p {float:left; width:100%;margin-top:10px;color:#000; font: normal 12px/16px Arial, sans-serif; text-transform:uppercase;}
+#dois1 > div div span {float:left; width:100%; color:#ba0011; font: normal 28px/32px Arial, sans-serif;letter-spacing: -2px;}
+#dois1 > div div a {float:left; margin-top: 10px;}
+
+
+/*#slide.loja {background:#b4390b url("../img/slide/bgloja.png") repeat-x left bottom;}
+#slide.loja .in {min-height:167px; background: url("../img/slide/diversao.jpg") no-repeat left top;}*/
+
+/*******************************************
+				   Meio
+*******************************************/
+
+#meio {float:left; width:100%; background: url("../img/bgmeio.png") repeat-x left top; padding:30px 0;}
+
+#sidebar {float:left; width:190px; margin-right: 20px; background: url("../img/bgsidebar.png") repeat-y right top;}
+#sidebar > span {float:left; color:#004786; text-transform:uppercase; font: bold 14px/22px Arial, sans-serif; padding-left:27px; background: url("../img/titside.png") no-repeat left top;} 
+#sidebar > ul { float:left; width:100%; margin:10px 0 20px 0; list-style:none;}
+#sidebar > ul li {float:left; width:100%; margin-bottom:17px; }
+#sidebar > ul li a {float:left; width:160px; color:#696969; background: url("../img/bgmenu.png") repeat-x left bottom; font: normal 16px/18px Arial, sans-serif; text-transform:uppercase; margin-bottom:-24px; padding: 10px 0 24px 30px;}
+#sidebar > ul li.hover {background: url("../img/menu.png") no-repeat right top;}
+/*#sidebar > ul li.link  {background: url("../img/menubottom.png") no-repeat right bottom;}*/
+#sidebar ul li  a:hover{background: url("../img/menubottom_hover.png") no-repeat right;}
+#sidebar > ul li.hover a {background: url("../img/menubottom.png") no-repeat right bottom;}
+#sidebar div {float:left; width:100%; margin-bottom: 10px;}
+#sidebar input.text {float:left; width:134px; padding: 9px 7px; font: normal 12px/18px Arial, sans-serif; color:#767676; background: url("../img/bginput.png") no-repeat left top;}
+#sidebar div#parceiros {width:160px; padding:5px; border: 1px solid #cecece; background: url("../img/bgparceiros.png") no-repeat center bottom;}
+#sidebar div#parceiros h1 { float:left;color:#004786; text-transform:uppercase; letter-spacing:-1px; padding-left: 17px; background: url("../img/setaparceiros.png") no-repeat left center;}
+#sidebar div#parceiros a {float: left; margin: 10px 0 0;}
+
+#sidebar div#buscaadv {width:160px; padding:5px; border: 1px solid #cecece; background: url("../img/bgparceiros.png") no-repeat center bottom;}
+#sidebar div#buscaadv h1 { float:left;color:#004786; text-transform:uppercase; letter-spacing:-1px; padding-left: 17px; background: url("../img/setaparceiros.png") no-repeat left center; margin-bottom:10px;}
+#sidebar div#buscaadv div {float:left; width:100%; margin:2px 0; color:#696969;font: normal 12px/16px Arial, sans-serif;}
+#sidebar div#buscaadv div input {float:left; margin: 0 5px 0 10px;}
+#sidebar div#buscaadv div input.text {background: #FFFFFF; border: 1px solid #7F9DB9; float: none; margin: 0 8px; padding: 2px; width: 46px;}
+#sidebar div#buscaadv div label {float:left;}
+#sidebar div#buscaadv div select {margin: 0 10px; border: 1px solid #7f9db9;}
+#sidebar div#buscaadv div input.filtrar {margin:0 5px 0 25px}
+#fav {float:left; width:100%; color:#a9a9a9; font: bold 11px/14px Arial, sans-serif;}
+#fav h1 {float:left; padding-left: 20px; background: url("../img/fav.png") no-repeat left top; color:#004786; text-transform:uppercase; font: bold 14px/17px Arial, sans-serif;}
+#fav > p {float:left; width: 170px; color:#004786; font: normal 12px/14px Arial, sans-serif; margin: 10px 0;}
+#fav div {float:left; width: 155px; border: 3px dashed #e7e7e7; text-align:left; padding: 5px;}
+#fav div p {float:left; width:100%; padding:3px 0; width:150px; color:#a9a9a9; font: bold 11px/14px Arial, sans-serif;}
+#fav div p:nth-child(2n) {background:#f3f3f3;}
+#fav div p a {color:#a9a9a9;}
+#fav div p a:hover {color:#4c4c4c;}
+#fav div p span {float:right; color:#CF3027; margin-right:2px; *margin:-15px 0px 0px 0px; cursor:pointer;}
+#fav div p span:hover {color:#f00;}
+#fav div.ui-state-highlight {background:#ffd753; border: 3px dashed #ffa20f;}
+.ui-widget-header {padding: 5px;background:#ffd753; border:1px solid #ffa20f;}
+
+#conteudo {float:left; width:740px; text-align:center;}
+#conteudo > h1 {float:left; color:#004786; margin-bottom:10px; font: bold 15px/20px Arial, sans-serif; text-transform:uppercase; text-align:center;}
+#conteudo > h2 {float:left; color:#004786; margin-bottom:10px; font: bold 15px/17px Arial, sans-serif; text-transform:uppercase;padding:5px 0 0 25px;margin-top: 40px; background: url("../img/titside.png") no-repeat left top;}
+
+/*estilo titulo dos meus pedidos*/
+#posiH2{float:left; margin:2px 0px 0px 10px;}
+#posiH2 > h2{float:left; color:#004786; margin-bottom:10px; font: bold 15px/17px Arial, sans-serif; text-transform:uppercase;padding:5px 0 0 25px; background: url("../img/titside.png") no-repeat left top;}
+
+#contentfull h2 {float:left; width:100%; color:#004786; margin-bottom:15px; font: bold 15px/17px Arial, sans-serif; text-transform:uppercase;padding:5px 0 0 25px; background: url("../img/titside.png") no-repeat left top;}
+#contentfull span {float:left; width:100%; color:#004786; margin-bottom:10px; font: bold 12px/16px Arial, sans-serif}
+#contentfull h3 {float:left; width:100%; color:#004786; margin-top:10px; font: bold 14px/16px Arial, sans-serif}
+#contentfull p {float:left; width:100%; margin: 5px 0; color:#696969; font: normal 12px/16px Arial, sans-serif;}
+
+#anuncio {float:left; width:100%; background:#f9dcb6; padding: 4px 0; margin-top:20px;}
+#anuncio div {margin: 0 8px; width:323px;}
+#anuncio p {float:left; padding-left: 25px; background: url("../img/setaanuncio.png") no-repeat left top; font: bold 14px/22px Arial, sans-serif; text-transform:uppercase ; color:#b75c00; margin:3px 0 7px 7px;}
+
+.ambiente {float:left; width: 338px;}
+.ambiente + .ambiente {float:right;}
+.ambiente > a {float:left; width:308px; padding: 173px 15px 9px; margin: 10px 0; background: url("../img/ambientes.jpg") no-repeat left top; margin-bottom:5px; font: bold 19px/29px Arial, sans-serif; text-transform:uppercase; letter-spacing: -1px;}
+
+.ambiente > a.info {background: url("../img/temas/home-informatica.jpg") no-repeat left top; color:#004b89;}
+.ambiente > a.cultura {background: url("../img/temas/home-diversao.jpg") no-repeat left top;color:#bf1b00;}
+.ambiente > a.eletro {background: url("../img/temas/home-eletro.jpg") no-repeat left top;color:#3a9ff3;}
+.ambiente > a.gastronomia {background: url("../img/temas/home-culinaria.jpg") no-repeat left top;color:#f1cc22;}
+.ambiente > a.esportes {background: url("../img/temas/home-esportes.jpg") no-repeat left top;color:#00891a;}
+.ambiente > a.telefonia {background: url("../img/temas/home-telefonia.jpg") no-repeat left top;color:#f15922;}
+
+.ambiente > a.info:hover {background-position: 0 bottom;}
+.ambiente > a.cultura:hover {background-position: 0 bottom;}
+.ambiente > a.eletro:hover {background-position: 0 bottom;}
+.ambiente > a.gastronomia:hover {background-position: 0 bottom;}
+.ambiente > a.esportes:hover {background-position: 0 bottom;}
+.ambiente > a.telefonia:hover {background-position: 0 bottom;}
+
+/*******************************************
+				   Loja.aspx
+*******************************************/
+
+#loja {float:left; width:724px; margin-top:10px;}
+#loja > img {float:left;}
+#loja > div {float:left; width:100%; background: url("../img/loja/meio.png") repeat-y top left;}
+#loja > div > div {float:left; width:646px;min-height:780px;position:relative; overflow:hidden;}
+#loja > div > div div.ul {float:left; width:1292px; min-height:664px; position:absolute; top:0; left:0; list-style:none;}
+#loja > div > div div.ul div.li {float:left; width:646px;}
+#loja .prev {float:left; margin:309px 0;}
+#loja .next {float:right; margin:309px 0;}
+
+#breadcrumb {float:right;color:#696969; font: normal 11px/14px Arial, sans-serif;margin-top: 3px; margin-right:20px;
+    width: 241px;
+}
+#breadcrumb > span {float:left; padding-left:15px; margin-right:5px; background: url("../img/loja/breadcrumb.png") no-repeat left top; text-transform: uppercase; color:#004786; font: normal 11px/14px Arial, sans-serif;}
+#breadcrumb a {color:#696969;}
+#breadcrumb a:hover {text-decoration:underline;}
+
+.prateleira {float:left; width:100%; background: url("../img/loja/prateleiras.jpg") no-repeat left top; margin: 10px 0;}
+.produto {float:left; width:175px; margin:0 24px 0 18px; *margin:-15px 24px 0 18px; text-align:left;}
+.produto + .produto {margin-right:23px; text-align:left;}
+.produto + .produto + .produto {margin-right:0; text-align:left;}
+.desconto {float:left; width:107px; text-align:center; color:#fff; font: bold 11px/19px Arial, sans-serif;background: url("../img/loja/label.png") no-repeat left top; margin:12px 0 4px 35px;}
+.produto > img {float:left;margin: 35px 27px 0 20px;padding: 0 8px 2px; background: url("../img/loja/bgfoto.png") no-repeat left top;}
+.produto > div {float:left; width:173px; border: 1px solid #d6d6d6; background: #fff url("../img/loja/bgproduto.png") repeat-x left top; margin-top:5px; text-align:center;}
+.produto > div > img {margin-top: 7px;}
+.produto > div h1 {float:left; width:100%; color:#000; font: bold 11px/15px Arial, sans-serif; text-transform:none;}
+.produto > div p {float:left; width:100%; color:#d21616; font: bold 12px/15px Arial, sans-serif; margin: 3px 0;}
+.produto > div ul {float:left; width:100%; list-style:none;}
+.produto > div ul li {float:left; width:50%; height:20px; background: url("../img/loja/div.png") no-repeat right top; margin-bottom:7px;}
+.produto > div ul li a {float:left; color:#000;font: normal 12px/16px Arial, sans-serif;margin-left:13px; padding-left:17px; background: url("../img/loja/espiar.png") no-repeat left center;}
+.produto > div ul li + li {background:none;	}
+.produto > div ul li + li a {background: url("../img/loja/comprar.png") no-repeat left center; *float:left; *margin: -25px 0px 0px 100px;}
+
+#vejamais {float:left; width:720px; height:65px; background: url("../img/loja/maisofertas.png") no-repeat center top;}
+#vejamais a {float:left; width:177px;height: 35px; margin-left:273px; text-indent:-999px;}
+
+#geralTemas{width:724px; margin-top:50px; }
+#geralTemas > h2{float:left; color:#004786; margin-bottom:10px; font: bold 15px/17px Arial, sans-serif; text-transform:uppercase;padding:5px 0 0 25px;margin-top: 40px; background: url("../img/titside.png") no-repeat left top;}
+.naveguePorTemasInicialSemBusca{ margin-top:215px; }
+#temas {float:left; width:724px; margin-top:10px;} /*margin-top:10px;*/
+#temas > img {float:left;}
+#temas > div {float:left; width:100%; background: url("../img/loja/meio.png") repeat-y top left;}
+#temas > div > div {float:left; width:646px; position:relative; overflow:hidden; height:110px;}
+#temas .prev {float:left; margin:20px 0;}
+#temas .next {float:right; margin:20px 0;}
+
+#temas ul {float:left; width:3000px; height:110px; position:absolute; top:0; left:0; list-style:none;}
+#temas ul li {float:left; width:182px; margin:5px 5px 0 22px;}
+#temas ul li a img {padding:2px; background:#fff; /*border: 1px solid #e7e7e7*/}
+#temas ul li a span {float:left; width:100%;margin-top:5px; font: bold 15px/18px Arial, sans-serif; text-transform:uppercase;}
+#temas ul li a.esportes span {color:#00891a;}
+#temas ul li a.gastronomia span {color:#f2cf31;}
+#temas ul li a.eletro span {color:#3a9ff3;}
+
+.vejalojas {float:left; width:100%; list-style:none;}
+.vejalojas li {float:left; margin: 10px 7px;}
+
+.espiar {float: left; display:none; padding: 20px 20px 20px 20px; position: absolute; left: 110px; top: 240px; z-index:999; width: 381px; background: url("../img/bgespiar.png") no-repeat left top;}
+.espiar h2 {float:left; width:100%; color:#000; text-align:left; font: bold 12px/16px Arial, sans-serif; height:32px; margin-bottom:20px;}
+.espiar > img { cursor: pointer; float: right; margin: -10px;}
+.espiar h1 span {font: normal 12px/16px Arial, sans-serif;}
+.espiar div {float: left; width: 125px; margin-right:30px;}
+.espiar div img {margin-bottom:15px;}
+.espiar div + div {width:225px; margin:0; height:208px;}
+.espiar div + div p {float:left; width:100%; text-align:left; color:#000;font: normal 12px/16px Arial, sans-serif; margin: 0 0 15px 0;}
+.espiar div + div span {float:left; width:100%; text-align:left; color:#d21616; font: bold 12px/16px Arial, sans-serif;} 
+
+
+
+/*******************************************
+			  MapaDoSite.aspx
+*******************************************/
+
+#mapa {float:left; width:100%; list-style:none;}
+#mapa > li {float:left; width:100%;color:#004786;font: bold 12px/16px Arial, sans-serif;}
+#mapa ul {padding: 5px 0 5px 30px; font: normal 12px/16px Arial, sans-serif;}
+#mapa > li > ul {list-style:none;padding-left:20px;}
+#mapa > li > ul > li {padding-left:10px; background: url("../img/mapa.png") no-repeat left 3px; color:#696969;}
+#mapa > li > ul > li > ul {list-style:none;padding-left:20px;}
+#mapa > li > ul > li > ul > li {color:#696969;padding-left:9px; background: url("../img/bulletmapa.png") no-repeat left 7px;}
+#mapa > li > ul > li > ul > li > ul {list-style: disc;}
+
+/*******************************************
+			  MeusPedidos.aspx
+*******************************************/
+
+.meuspedidos #sidebar span {margin:5px 0 7px;}
+.meuspedidos #sidebar input.text {float:left; width:169px; padding: 9px 7px; font: normal 12px/14px Arial, sans-serif; background:url("../img/inputside.png") no-repeat left top; color:#767676; margin: 0 0 10px;}
+.meuspedidos #sidebar input.botao {margin-bottom:15px; float:left}
+/* Hack para Funcionar no IE7 \*/
+/**.meuspedidos #sidebar input.botao1 { margin-left:1px !Important;}
+.meuspedidos #sidebar input.botao1{margin-bottom:-220px; margin-left:-80px; float:left}*/
+    
+
+
+.meuspedidos span {float:left; margin:5px 0; color:#004786; font: normal 12px/16px Arial, sans-serif; width: 176px; height: 21px;}
+.meuspedidos p {float:left; width:100%; margin:5px 0; color:#696969; font: normal 12px/16px Arial, sans-serif;}
+.meuspedidos div.table {float:left; width:100%;}
+.meuspedidos table, .meuspedidos table tr {width:100%;}
+.meuspedidos table thead tr th {height:35px; text-align:left; padding-left:10px; color:#fff; background: url("../img/bgtabela.png") repeat-x left top; border-right: 1px solid #003662; border-left: 1px solid #669cc8; font: normal 10px/14px Arial, sans-serif; vertical-align:middle;}
+.meuspedidos table tbody tr td {height:34px; text-align:left;color:#696969;padding-left:10px; font: normal 11px/13px Arial, sans-serif;  background: url("/img/bgtable.png") repeat-x left top;border-right: 1px solid #fff; border-left: 1px solid #fff;vertical-align:middle;}
+.meuspedidos span h2{height:35px; text-align:left; padding-left:10px; color:#fff; background: url("../img/bgtabela.png") repeat-x left top; border-right: 1px solid #003662; border-left: 1px solid #669cc8; font: normal 10px/14px Arial, sans-serif; vertical-align:middle;}
+/*******************************************
+				   Busca.aspx
+*******************************************/
+
+#busca {float:left; width:100%;}
+#busca > div {float:left; width:195px; height:345px; padding:10px; margin: 0 30px 15px 0; background: url("../img/bgbusca.png") no-repeat left top; text-align:center;}
+#busca > div img + img { margin: 12px 0 5px;}
+#busca > div img + img + img {margin:0;}
+#busca > div p {color:#000; font: bold 12px/16px Arial, sans-serif;}
+#busca > div span {color:#f00; font: bold 12px/16px Arial, sans-serif; margin:7px 0;display: block;}
+.buscaTXT{ text-align:left;}
+
+#pag {float:left; width:214px; position:relative; height:45px; background: url("../img/pag.png") no-repeat left top; text-align:center; margin: 10px 245px;}
+#pag .prev {float:left; top:8px; position:absolute; left:0;}
+#pag .next {float:left; top:8px; position:absolute; right:0;}
+#pag p {color:#004786; font: bold 12px/16px Arial, sans-serif; letter-spacing:3px;float:left; width:100%; margin-top:14px;}
+#pag p a {color:#848484;}
+
+/*******************************************
+			  Login.aspx
+*******************************************/
+.BoxJaCadastrado{float:left; background:url("../img/bgboxjacadastrado.png") no-repeat; width:603px; height:148px; margin:-25px 0 0 0; clear:both; font:14px Arial; color:#004b89; padding:66px 0 0 24px;}
+.BoxJaCadastrado b{font-size:18px; font-weight:bold; text-transform:uppercase;}
+
+.BoxNaoCadastrado{float:left; background:url("../img/bgboxnaocadastrado.png") no-repeat; width:311px; height:197px; margin:20px 0 0 0; font:18px Arial; color:#fff; text-align:center; padding:53px 0 0 0;}
+.BoxNaoCadastrado b.titulo{font-size:18px; font-weight:bold; text-transform:uppercase;}
+.BoxNaoCadastrado b.destaque{font-size:24px; font-weight:bold; color:#d0e7fb;}
+
+/*
+DIV PORTAL.MASTER 
+cabelhaço de Bem-Vindos
+*/
+
+#litSaudacaoCSS{ float:left; color:#004786; font: bold 15px/20px Arial, sans-serif; text-transform:uppercase; text-align:center; margin-top:98px; margin-left:-475px; position: absolute; width: 950px; left:50%; }
+.textLeft{ text-align:left;}
+.txtEsqueci{ margin-top:-5px; *margin-top:-35px; color: #004786; float: right; font: 11px/16px Arial,sans-serif; padding-left:7px; background: url("../img/seta.png") no-repeat left center; margin-right: 13px;}
+
+/*******************************************
+	Slideshow do Banner de Parceiros
+*******************************************/
+.slideshow {position:relative;height:51px;width:136px;margin:0 0 0 15px;}
+ 
+
+.slideshow a {position:absolute;top:0;left:0;z-index:8;}
+ 
+.slideshow a.active {z-index:10;}
+ 
+.slideshow a.last-active {z-index:9;}
+
+/* CSS ordenação Produtos*/
+.ordenaProdutos{ color:#666; font: 12px Arial, sans-serif;  text-align:left; margin-left:400px;}
+.ordemCombo{ font:11px Arial;}
+
+/*css personalizar o link de categoria*/
+
+/*corpo do redirect*/
+#redirect_body{ width:70%; height:400px; background:  url("../img/bg_redirect.png") no-repeat top #f5f5f5; text-align:center; border:solid 1px #18538F; margin:3% 15% 0% 15%;}
+#redirect_body p { text-align:center;}
+#imgLogo{ text-align:center; }
+#imgParceiro{ text-align:center; }
+
+/*classe para imagem comprar dentro no espiar*/
+.imgComprar{ margin-top:4px; float:left;}
+.linkComprar{ margin-top:4px; margin-left:4px; float:left; color:#000;}
+.comprar{ margin-top:25px; float:left; color:#000;}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!--
+    <add key="arquivoProduto" value="C:\temp\cosan\cosan.xml"/>
+    <add key="arquivoOrder" value="C:\temp\cosan\cosan.xml"/>
+    <add key="arquivoTracking" value="C:\temp\cosan\cosan.xml"/>
+    -->
+
+    <add key="nomeArquivoProduto" value="cosan.xml"/>
+    
+    <add key="URLarquivoProdutoSubmarino" value="http://www.submarino.com.br/partnersservices/cosan.zip"/>
+    <add key="arquivoProdutoZipadoSubmarino" value="cosan.zip"/>
+    <add key="arquivoProdutoSubmarino" value="C:\laboris\Swap\Submarino\"/>
+
+    <add key="URLarquivoProdutoCentauro" value="ftp://187.45.247.179/Centauro/"/>
+    <add key="arquivoProdutoCentauro" value="C:\laboris\Swap\Centauro\"/>
+
+    <add key="URLarquivoProdutoManiaVirtual" value="ftp://187.45.247.179/Fielo/"/>
+    <add key="arquivoProdutoManiaVirtual" value="C:\laboris\Swap\ManiaVirtual\"/>
+
+    <add key="pastaErro" value="Erro"/>
+    <add key="pastaProcessado" value="Processado"/>
+
+    <add key="pastaBase" value="C:\laboris\Swap\"/>
+    <add key="pastaOrder" value="C:\laboris\Swap\"/>
+    <add key="pastaTracking" value="C:\laboris\Swap\"/> 
+
+    <add key="FtpUsr" value="laboris"/>
+    <add key="FtpPwd" value="Lab@#2010!bal"/>
+
+    <add key="ConnectionString" value="Data Source=187.45.247.179;Database=cosan;User ID=laboris;Password=Lab@#2010!bal;"/>
+    <!--<add key="ConnectionString" value="Data Source=192.168.1.51;Database=cosanv2;User ID=sa;Password=intranet;"/>-->
+  </appSettings>
+
+</configuration>

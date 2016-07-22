@@ -1,0 +1,15 @@
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.UI.ViewWeb.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.UI.ViewWeb.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.DataAccessLayer.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.Domain.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.Repository.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.Service.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.UI.Controller.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.DataAccessLayer.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.Domain.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.Repository.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.Service.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\bin\Laboris.Cosan.UI.Controller.pdb
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\obj\Debug\Laboris.Cosan.UI.ViewWeb.dll
+C:\CosanV2\Projeto\cosanv2\trunk\src\Laboris.Cosan.UI.ViewWeb\obj\Debug\Laboris.Cosan.UI.ViewWeb.pdb

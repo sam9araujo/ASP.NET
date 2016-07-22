@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cosanv2/!svn/ver/238/trunk/src/Laboris.Cosan.Repository/DAL
+END
+ProdutoDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/238/trunk/src/Laboris.Cosan.Repository/DAL/ProdutoDAL.cs
+END
+NewsletterDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/NewsletterDAL.cs
+END
+ProdutoBO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Repository/DAL/ProdutoBO.cs
+END
+OrderPointsTempDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/OrderPointsTempDAL.cs
+END
+CategoriaDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/CategoriaDAL.cs
+END
+CategoriaBO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Repository/DAL/CategoriaBO.cs
+END
+RebateDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/RebateDAL.cs
+END
+TrackingDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/TrackingDAL.cs
+END
+PedidoDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/PedidoDAL.cs
+END
+ParceiroDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cosanv2/!svn/ver/195/trunk/src/Laboris.Cosan.Repository/DAL/ParceiroDAL.cs
+END
+AtributoProdutoDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/AtributoProdutoDAL.cs
+END
+ImagemProdutoDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/ImagemProdutoDAL.cs
+END
+ImagemProdutoBO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.Repository/DAL/ImagemProdutoBO.cs
+END
+ItemPedidoDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cosanv2/!svn/ver/49/trunk/src/Laboris.Cosan.Repository/DAL/ItemPedidoDAL.cs
+END
+AmbienteDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cosanv2/!svn/ver/110/trunk/src/Laboris.Cosan.Repository/DAL/AmbienteDAL.cs
+END
+UsuarioDAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cosanv2/!svn/ver/190/trunk/src/Laboris.Cosan.Repository/DAL/UsuarioDAL.cs
+END

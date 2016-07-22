@@ -1,0 +1,196 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.DataAccessLayer;
+using System.Configuration;
+
+namespace Laboris.Cosan.Repository.DAL
+{
+    public class CategoriaDAL : BaseDAL<Categoria>
+    {
+        private AmbienteDAL _ambienteDAL;
+        //private CategoriaDAL _categoriaDAL;
+        private ParceiroDAL _parceiroDAL;
+        private ProdutoDAL _produtoDAL;
+
+        private AmbienteDAL AmbienteDAL
+        {
+            get
+            {
+                if (_ambienteDAL == null)
+                    _ambienteDAL = new AmbienteDAL();
+
+                return _ambienteDAL;
+            }
+        }
+        /*
+        public CategoriaDAL CategoriaDAL
+        {
+            get
+            {
+                if (_categoriaDAL == null)
+                    _categoriaDAL = new CategoriaDAL();
+
+                return _categoriaDAL;
+            }
+        }
+        */
+        private ParceiroDAL ParceiroDAL
+        {
+            get
+            {
+                if (_parceiroDAL == null)
+                    _parceiroDAL = new ParceiroDAL();
+
+                return _parceiroDAL;
+            }
+        }
+
+        private ProdutoDAL ProdutoDAL
+        {
+            get
+            {
+                if (_produtoDAL == null)
+                    _produtoDAL = new ProdutoDAL();
+
+                return _produtoDAL;
+            }
+        }
+
+        public override string SqlSELECT
+        {
+            get { return QuerysSQL.selectCategoria; }
+        }
+
+        public override string SqlINSERT
+        {
+            get { return QuerysSQL.insertCategoria; }
+        }
+
+        public override string SqlUPDATE
+        {
+            get { return QuerysSQL.updateCategoria; }
+        }
+
+        public override string SqlDELETE
+        {
+            get { return QuerysSQL.deleteCategoria; }
+        }
+
+        public override string SqlWhereKey
+        {
+            get { return QuerysSQL.whereKeyCategoria; }
+        }
+
+        internal override void ExecuteIncludes(List<Categoria> categoria)
+        {
+            for (int i = 0; i < categoria.Count; i++)
+            {
+                if (_ambienteDAL != null)
+                    categoria[i].Ambientes = _ambienteDAL.ListarPorCategoria(categoria[i].IdCategoria);
+
+                //if (_categoriaDAL != null)
+                //    categoria[i].Categorias = _categoriaDAL.Listar("idCategoria = " + categoria[i].IdCategoria + " AND idParceiro = " + categoria[i].IdParceiro);
+
+                if (_parceiroDAL != null)
+                    categoria[i].Parceiro = _parceiroDAL.Obter("idParceiro = " + categoria[i].IdParceiro);
+
+                if (_produtoDAL != null)
+                    categoria[i].Produtos = _produtoDAL.Listar("idCategoria = " + categoria[i].IdCategoria + " AND idParceiro = " + categoria[i].IdParceiro);
+            }
+        }
+
+        internal override IDbDataParameter[] PrepareParametersFactory(Categoria categoria, bool includeKeys = false)
+        {
+            IDbDataParameter[] dataParameters;
+
+            if (includeKeys)
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 8);
+            else
+                dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 6);
+            
+            dataParameters[0].ParameterName = "idCategoria";
+            dataParameters[0].DbType = DbType.Int32;
+            dataParameters[0].Value = categoria.IdCategoria;
+
+            dataParameters[1].ParameterName = "idParceiro";
+            dataParameters[1].DbType = DbType.Int32;
+            dataParameters[1].Value = categoria.IdParceiro;
+
+            dataParameters[2].ParameterName = "descricao";
+            dataParameters[2].DbType = DbType.String;
+            dataParameters[2].Value = categoria.Descricao;
+
+            dataParameters[3].ParameterName = "dataCadastro";
+            dataParameters[3].DbType = DbType.DateTime;
+            dataParameters[3].Value = categoria.DataCadastro;
+
+            dataParameters[4].ParameterName = "mostra";
+            dataParameters[4].DbType = DbType.Boolean;
+            dataParameters[4].Value = categoria.Mostra;
+
+            dataParameters[5].ParameterName = "idPaiCategoria";
+            dataParameters[5].DbType = DbType.Int32;
+            dataParameters[5].Value = categoria.IdPaiCategoria;
+           
+
+            if (includeKeys)
+            {
+                dataParameters[6].ParameterName = "idCategoriaKey";
+                dataParameters[6].DbType = DbType.Int32;
+                dataParameters[6].Value = categoria.IdCategoria;
+
+                dataParameters[7].ParameterName = "idParceiroKey";
+                dataParameters[7].DbType = DbType.Int32;
+                dataParameters[7].Value = categoria.IdParceiro;
+            }
+        
+            return dataParameters;
+        }
+
+        internal override IDbDataParameter[] PrepareParametersKeyFactory(Categoria categoria)
+        {
+            IDbDataParameter[] dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 2);
+
+            dataParameters[0].ParameterName = "idCategoriaKey";
+            dataParameters[0].DbType = DbType.Int32;
+            dataParameters[0].Value = categoria.IdCategoria;
+
+            dataParameters[1].ParameterName = "idParceiroKey";
+            dataParameters[1].DbType = DbType.Int32;
+            dataParameters[1].Value = categoria.IdParceiro;
+            
+            return dataParameters;
+        }
+
+        public CategoriaDAL()
+        {
+            
+        }
+        
+        public override Categoria Factory(IDataReader DataReader)
+        {
+            Categoria categoria = new Categoria();
+            {
+                categoria.IdCategoria = int.Parse(DataReader["idCategoria"].ToString());
+                categoria.IdParceiro = int.Parse(DataReader["idParceiro"].ToString());
+                categoria.DataCadastro = DateTime.Parse(DataReader["dataCadastro"].ToString());
+                categoria.Descricao = DataReader["descricao"].ToString();
+                categoria.Mostra = bool.Parse(DataReader["mostra"].ToString());
+                //Tirar o comentário depois que alterar a regra no banco.
+                //categoria.IdPaiCategoria = int.Parse(DataReader["idPaiCategoria"].ToString());
+            }
+            return categoria;
+        }
+
+        public IList<Categoria> ListarPorAmbiente(int idAmbiente)
+        {
+            string sql = this.SqlSELECT + " INNER JOIN AMBIENTE_CATEGORIA ON CATEGORIA.idCategoria = AMBIENTE_CATEGORIA.idCategoria AND CATEGORIA.idParceiro = AMBIENTE_CATEGORIA.idParceiro WHERE idAmbiente = " + idAmbiente;
+            return this.QueryExecute(sql);
+        }
+    }
+}
+

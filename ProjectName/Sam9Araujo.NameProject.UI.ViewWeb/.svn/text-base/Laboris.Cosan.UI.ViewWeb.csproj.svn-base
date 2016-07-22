@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25FBD104-BCFE-4B72-A2DD-D7103CE3D908}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laboris.Cosan.UI.ViewWeb</RootNamespace>
+    <AssemblyName>Laboris.Cosan.UI.ViewWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AjaxTest.aspx" />
+    <Content Include="AjaxUserControlExampleNossosParceiros.ascx" />
+    <Content Include="Categoria.aspx" />
+    <Content Include="bin\Laboris.Cosan.UI.ViewWeb.dll" />
+    <Content Include="bin\Laboris.Cosan.UI.ViewWeb.pdb" />
+    <Content Include="Busca.aspx" />
+    <Content Include="ComoComprar.aspx" />
+    <Content Include="Controls\AbasMenu.ascx" />
+    <Content Include="Controls\Busca.ascx" />
+    <Content Include="Controls\OrdenacaoProdutos.ascx" />
+    <Content Include="Controls\Pager.ascx" />
+    <Content Include="Controls\PrateleiraProdutos.ascx" />
+    <Content Include="Controls\wsPrateleiraProdutos.asmx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultExample.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="ImagensAmbientes\diversao.jpg" />
+    <Content Include="ImagensAmbientes\eletro.jpg" />
+    <Content Include="ImagensAmbientes\esportes.jpg" />
+    <Content Include="ImagensAmbientes\gastronomia.jpg" />
+    <Content Include="ImagensAmbientes\informatica.jpg" />
+    <Content Include="ImagensAmbientes\telefonia.jpg" />
+    <Content Include="imagensProdutos\76516352.jpg" />
+    <Content Include="imagensProdutos\download.jpg" />
+    <Content Include="imagensProdutos\matrix.jpg" />
+    <Content Include="imagensProdutos\pq21801355.jpg" />
+    <Content Include="imagensProdutos\pq21821409.jpg" />
+    <Content Include="imagensProdutos\pq21847874.jpg" />
+    <Content Include="imagensProdutos\prod.png" />
+    <Content Include="imagensProdutos\senhordosaneis.jpg" />
+    <Content Include="Controls\Login.ascx" />
+    <Content Include="img\ambientes.jpg" />
+    <Content Include="img\bgboxjacadastrado.png" />
+    <Content Include="img\bgboxnaocadastrado.png" />
+    <Content Include="img\bgbusca.png" />
+    <Content Include="img\bgespiar.png" />
+    <Content Include="img\bgform.png" />
+    <Content Include="img\bginput.png" />
+    <Content Include="img\bgmeio.png" />
+    <Content Include="img\bgmenu.png" />
+    <Content Include="img\bgparceiros.png" />
+    <Content Include="img\bgrodape.png" />
+    <Content Include="img\bgsidebar.gif" />
+    <Content Include="img\bgsidebar.png" />
+    <Content Include="img\bgslide.png" />
+    <Content Include="img\bgtabela.png" />
+    <Content Include="img\bgtable.png" />
+    <Content Include="img\bgtopo.png" />
+    <Content Include="img\BtFiltrar.png" />
+    <Content Include="img\bulletmapa.png" />
+    <Content Include="img\cadastrese.png" />
+    <Content Include="img\cartoes.png" />
+    <Content Include="img\close.png" />
+    <Content Include="img\consultar.png" />
+    <Content Include="img\cosan.png" />
+    <Content Include="img\demo\anuncio.jpg" />
+    <Content Include="img\demo\prod.png" />
+    <Content Include="img\detalhes.png" />
+    <Content Include="img\enviar.png" />
+    <Content Include="img\esso.png" />
+    <Content Include="img\essoroda.png" />
+    <Content Include="img\fav.png" />
+    <Content Include="img\frete.png" />
+    <Content Include="img\icons.png" />
+    <Content Include="img\inputside.png" />
+    <Content Include="img\laboris.png" />
+    <Content Include="img\logoroda.png" />
+    <Content Include="img\logotopo.png" />
+    <Content Include="img\loja\baixo.png" />
+    <Content Include="img\loja\balao.png" />
+    <Content Include="img\loja\bancentauro.jpg" />
+    <Content Include="img\loja\bannersub.jpg" />
+    <Content Include="img\loja\bansubmarino.jpg" />
+    <Content Include="img\loja\bansubviagem.jpg" />
+    <Content Include="img\loja\bgfoto.png" />
+    <Content Include="img\loja\bgproduto.png" />
+    <Content Include="img\loja\breadcrumb.png" />
+    <Content Include="img\loja\comprar.png" />
+    <Content Include="img\loja\div.png" />
+    <Content Include="img\loja\espiar.png" />
+    <Content Include="img\loja\frete.png" />
+    <Content Include="img\loja\label.png" />
+    <Content Include="img\loja\maisofertas.png" />
+    <Content Include="img\loja\meio.png" />
+    <Content Include="img\loja\nextorange.png" />
+    <Content Include="img\loja\nextred.png" />
+    <Content Include="img\loja\prateleiras.jpg" />
+    <Content Include="img\loja\prateleirass.jpg" />
+    <Content Include="img\loja\prevorange.png" />
+    <Content Include="img\loja\prevred.png" />
+    <Content Include="img\loja\submarino.jpg" />
+    <Content Include="img\loja\topo.png" />
+    <Content Include="img\mapa.png" />
+    <Content Include="img\menu.png" />
+    <Content Include="img\menubottom.png" />
+    <Content Include="img\menubottom_hover.png" />
+    <Content Include="img\menudiv.png" />
+    <Content Include="img\ok.png" />
+    <Content Include="img\pag.png" />
+    <Content Include="img\pagnext.png" />
+    <Content Include="img\pagprev.png" />
+    <Content Include="img\parceiros\autoguia.png" />
+    <Content Include="img\parceiros\centauros.jpg" />
+    <Content Include="img\parceiros\centauros.png" />
+    <Content Include="img\parceiros\centaurosOLD.png" />
+    <Content Include="img\parceiros\imperdivel.png" />
+    <Content Include="img\parceiros\maniaVirtual.jpg" />
+    <Content Include="img\parceiros\submarino.jpg" />
+    <Content Include="img\parceiros\Submarino.png" />
+    <Content Include="img\parceiros\SubmarinoViagens.png" />
+    <Content Include="img\seta.png" />
+    <Content Include="img\setaanuncio.png" />
+    <Content Include="img\setaparceiros.png" />
+    <Content Include="img\setaslide.png" />
+    <Content Include="img\slide.png" />
+    <Content Include="img\slide\01.png" />
+    <Content Include="img\slide\03.png" />
+    <Content Include="img\slide\bg.png" />
+    <Content Include="img\slide\bgloja.png" />
+    <Content Include="img\slide\demo.png" />
+    <Content Include="img\slide\diversao.jpg" />
+    <Content Include="img\slide\menu.png" />
+    <Content Include="img\slide\pontos.png" />
+    <Content Include="img\submenu.png" />
+    <Content Include="img\submenubottom.png" />
+    <Content Include="img\submitsidebar.png" />
+    <Content Include="img\temas\eletro.jpg" />
+    <Content Include="img\temas\esporte.jpg" />
+    <Content Include="img\temas\gastronomia.jpg" />
+    <Content Include="img\temas\home-culinaria.jpg" />
+    <Content Include="img\temas\home-diversao.jpg" />
+    <Content Include="img\temas\home-eletro.jpg" />
+    <Content Include="img\temas\home-esportes.jpg" />
+    <Content Include="img\temas\home-informatica.jpg" />
+    <Content Include="img\temas\home-telefonia.jpg" />
+    <Content Include="img\temas\img_cultura.png" />
+    <Content Include="img\temas\img_eletro.png" />
+    <Content Include="img\temas\img_esporte.png" />
+    <Content Include="img\temas\img_gastronomia.png" />
+    <Content Include="img\temas\img_informatica.png" />
+    <Content Include="img\temas\img_telefonia.png" />
+    <Content Include="img\titside.png" />
+    <Content Include="js\sliderBusca.js" />
+    <Content Include="js\sliderOfertas.js" />
+    <Content Include="js\in\cmng.js" />
+    <Content Include="js\sliderCategoria.js" />
+    <Content Include="js\in\jquery.inputmask.js" />
+    <Content Include="js\in\jquery.maskedinput-1.3.min.js" />
+    <Content Include="js\in\json2.js" />
+    <Content Include="js\sliderComum.js" />
+    <Content Include="js\mfav.js" />
+    <Content Include="js\in\slidePaging.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Loja.aspx" />
+    <Content Include="MapadoSite.aspx" />
+    <Content Include="MeusPedidos.aspx" />
+    <Content Include="Controls\NaveguePorTemas.ascx" />
+    <Content Include="css\style.css" />
+    <Content Include="js\in\ie-css3.js" />
+    <Content Include="js\in\jquery.js" />
+    <Content Include="js\in\modernizr.js" />
+    <Content Include="js\in\png.js" />
+    <Content Include="js\in\slideshow.js" />
+    <Content Include="js\in\ui.js" />
+    <Content Include="js\js.js" />
+    <Content Include="Controls\NossosParceiros.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Ofertas.aspx" />
+    <Content Include="Redirect.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Controls\SitesParceiros.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseWebServiceView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxTest.aspx.cs">
+      <DependentUpon>AjaxTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxTest.aspx.designer.cs">
+      <DependentUpon>AjaxTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxUserControlExampleNossosParceiros.ascx.cs">
+      <DependentUpon>AjaxUserControlExampleNossosParceiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxUserControlExampleNossosParceiros.ascx.designer.cs">
+      <DependentUpon>AjaxUserControlExampleNossosParceiros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.aspx.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria.aspx.designer.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseUserControlView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Busca.aspx.cs">
+      <DependentUpon>Busca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Busca.aspx.designer.cs">
+      <DependentUpon>Busca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BuscaRequest.cs" />
+    <Compile Include="Common\HtmlHelperPrateleiraProdutos.cs" />
+    <Compile Include="Common\LoginManager.cs" />
+    <Compile Include="Common\UsuarioLogado.cs" />
+    <Compile Include="ComoComprar.aspx.cs">
+      <DependentUpon>ComoComprar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComoComprar.aspx.designer.cs">
+      <DependentUpon>ComoComprar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AbasMenu.ascx.cs">
+      <DependentUpon>AbasMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AbasMenu.ascx.designer.cs">
+      <DependentUpon>AbasMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Busca.ascx.cs">
+      <DependentUpon>Busca.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Busca.ascx.designer.cs">
+      <DependentUpon>Busca.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrdenacaoProdutos.ascx.cs">
+      <DependentUpon>OrdenacaoProdutos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OrdenacaoProdutos.ascx.designer.cs">
+      <DependentUpon>OrdenacaoProdutos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PrateleiraProdutos.ascx.cs">
+      <DependentUpon>PrateleiraProdutos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PrateleiraProdutos.ascx.designer.cs">
+      <DependentUpon>PrateleiraProdutos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\wsPrateleiraProdutos.asmx.cs">
+      <DependentUpon>wsPrateleiraProdutos.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultExample.aspx.cs">
+      <DependentUpon>DefaultExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultExample.aspx.designer.cs">
+      <DependentUpon>DefaultExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loja.aspx.cs">
+      <DependentUpon>Loja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loja.aspx.designer.cs">
+      <DependentUpon>Loja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapadoSite.aspx.cs">
+      <DependentUpon>MapadoSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapadoSite.aspx.designer.cs">
+      <DependentUpon>MapadoSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeusPedidos.aspx.cs">
+      <DependentUpon>MeusPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeusPedidos.aspx.designer.cs">
+      <DependentUpon>MeusPedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NaveguePorTemas.ascx.cs">
+      <DependentUpon>NaveguePorTemas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NaveguePorTemas.ascx.designer.cs">
+      <DependentUpon>NaveguePorTemas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NossosParceiros.ascx.cs">
+      <DependentUpon>NossosParceiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NossosParceiros.ascx.designer.cs">
+      <DependentUpon>NossosParceiros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ofertas.aspx.cs">
+      <DependentUpon>Ofertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ofertas.aspx.designer.cs">
+      <DependentUpon>Ofertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal.Master.cs">
+      <DependentUpon>Portal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal.Master.designer.cs">
+      <DependentUpon>Portal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\SitesParceiros.ascx.cs">
+      <DependentUpon>SitesParceiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SitesParceiros.ascx.designer.cs">
+      <DependentUpon>SitesParceiros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utilidade.cs" />
+    <Compile Include="Redirect.aspx.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Redirect.aspx.designer.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="css\font\" />
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Laboris.Cosan.DataAccessLayer\Laboris.Cosan.DataAccessLayer.csproj">
+      <Project>{6B2C7C9D-0DE9-4FAA-A305-4C4D82D754DC}</Project>
+      <Name>Laboris.Cosan.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laboris.Cosan.Domain\Laboris.Cosan.Domain.csproj">
+      <Project>{188EEBE4-20F6-4E8A-8F00-0290ACB86220}</Project>
+      <Name>Laboris.Cosan.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laboris.Cosan.Repository\Laboris.Cosan.Repository.csproj">
+      <Project>{B89EEBFA-CA72-4042-B60F-7E5834E7005B}</Project>
+      <Name>Laboris.Cosan.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laboris.Cosan.Service\Laboris.Cosan.Service.csproj">
+      <Project>{8B8693D2-89BA-4664-95F3-1BFDEB8A0A67}</Project>
+      <Name>Laboris.Cosan.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laboris.Cosan.UI.Controller\Laboris.Cosan.UI.Controller.csproj">
+      <Project>{11540028-17E6-4D47-98F0-4C6FF576C216}</Project>
+      <Name>Laboris.Cosan.UI.Controller</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Portal.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

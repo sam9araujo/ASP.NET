@@ -1,0 +1,223 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Laboris.Cosan.Repository;
+using Laboris.Cosan.Domain;
+using System.Data;
+
+namespace Laboris.Cosan.TestProject.Repository
+{
+    /// <summary>
+    ///This is a test class for ParceiroDALTest and is intended
+    ///to contain all ParceiroDALTest Unit Tests
+    ///</summary>
+    [TestClass()]
+    public class CategoriaDALTest
+    {
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+        /// <summary>
+        ///A test for Insert
+        ///</summary>
+        //[TestMethod()]
+        public void InsertTest()
+        {
+            PedidoRepository target = new PedidoRepository();
+            Pedido pedido = new Pedido();
+
+            pedido.IdPedido = 999;
+            pedido.IdParceiro = 1;
+            pedido.Bairro = "Bairro Test";
+            pedido.CEP = "CEP Test";
+            pedido.Cidade = "Cidade Test";
+            pedido.CPFCNPJ = "CPF Test";
+            pedido.Data = DateTime.Now;
+            pedido.Endereco = "Endereço Test";
+            pedido.FormaPagamento = "FormaPagamento Test";
+            pedido.Frete = 999;
+            pedido.Nome = "Pedido Test";
+            pedido.Status = "Status Test";
+            pedido.UF = "RJ";
+
+            pedido.ItensPedido = new List<ItemPedido>();
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[0].IdPedido = 999;
+            pedido.ItensPedido[0].IdParceiro = 1;
+            pedido.ItensPedido[0].IdItem = 1;
+            pedido.ItensPedido[0].Nivel = 1;
+            pedido.ItensPedido[0].NomeProduto = "Nome Produto Test 1";
+            pedido.ItensPedido[0].Pontos = 99;
+            pedido.ItensPedido[0].PrecoUnitario = 99;
+            pedido.ItensPedido[0].Quantidade = 9;
+            pedido.ItensPedido[0].ValorRebate = 6;
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[1].IdPedido = 999;
+            pedido.ItensPedido[1].IdParceiro = 1;
+            pedido.ItensPedido[1].IdItem = 2;
+            pedido.ItensPedido[1].Nivel = 1;
+            pedido.ItensPedido[1].NomeProduto = "Nome Produto Test 2";
+            pedido.ItensPedido[1].Pontos = 99;
+            pedido.ItensPedido[1].PrecoUnitario = 99;
+            pedido.ItensPedido[1].Quantidade = 9;
+            pedido.ItensPedido[1].ValorRebate = 6;
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[2].IdPedido = 999;
+            pedido.ItensPedido[2].IdParceiro = 1;
+            pedido.ItensPedido[2].IdItem = 3;
+            pedido.ItensPedido[2].Nivel = 1;
+            pedido.ItensPedido[2].NomeProduto = "Nome Produto Test 3";
+            pedido.ItensPedido[2].Pontos = 99;
+            pedido.ItensPedido[2].PrecoUnitario = 99;
+            pedido.ItensPedido[2].Quantidade = 9;
+            pedido.ItensPedido[2].ValorRebate = 6;
+
+            target.Insert(pedido);
+
+            Pedido pedidoTest = target.Obter("IdParceiro = " + pedido.IdParceiro + " AND IdPedido = " + pedido.IdPedido);
+
+            Assert.IsNotNull(pedidoTest);
+        }
+
+        [TestMethod()]
+        public void ListarPedidoTest()
+        {
+            PedidoRepository target = new PedidoRepository();
+            IList<Pedido> actual = null;
+            actual = target.Listar();
+            Assert.IsNotNull(actual);
+            actual = target.Listar(true);
+            Assert.IsNotNull(actual);
+            actual = target.Listar("UF = 'RJ'");
+            Assert.IsNotNull(actual);
+            actual = target.Listar("UF = 'RJ'", true);
+            Assert.IsNotNull(actual);
+        }
+
+        [TestMethod()]
+        public void ObterPedidoTest()
+        {
+            PedidoRepository target = new PedidoRepository();
+            Pedido actual = null;
+            actual = target.Obter("idPedido = 999 AND idParceiro = 1");
+            Assert.IsNotNull(actual);
+            actual = target.Obter("idPedido = 999 AND idParceiro = 1", true);
+            Assert.IsNotNull(actual);
+        }
+
+        /// <summary>
+        ///A test for Update
+        ///</summary>
+        //[TestMethod()]
+        public void UpdateTest()
+        {
+            PedidoRepository target = new PedidoRepository();
+            Pedido pedido = new Pedido();
+
+            pedido.IdPedido = 999;
+            pedido.IdParceiro = 1;
+            pedido.Bairro = "Bairro Test UPDATED";
+            pedido.CEP = "UPDATED";
+            pedido.Cidade = "Cidade Test UPDATED";
+            pedido.CPFCNPJ = "CPF Test UPDATED";
+            pedido.Data = DateTime.Now;
+            pedido.Endereco = "Endereço Test UPDATED";
+            pedido.FormaPagamento = "FormaPagamento Test UPDATED";
+            pedido.Frete = 888;
+            pedido.Nome = "Pedido Test UPDATED";
+            pedido.Status = "Status Test UPDATED";
+            pedido.UF = "SP";
+
+            pedido.ItensPedido = new List<ItemPedido>();
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[0].IdPedido = 999;
+            pedido.ItensPedido[0].IdPedido = 1;
+            pedido.ItensPedido[0].IdItem = 1;
+            pedido.ItensPedido[0].Nivel = 1;
+            pedido.ItensPedido[0].NomeProduto = "Nome Produto Test 1 UPDATED";
+            pedido.ItensPedido[0].Pontos = 88;
+            pedido.ItensPedido[0].PrecoUnitario = 88;
+            pedido.ItensPedido[0].Quantidade = 8;
+            pedido.ItensPedido[0].ValorRebate = 3;
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[1].IdPedido = 999;
+            pedido.ItensPedido[1].IdPedido = 1;
+            pedido.ItensPedido[1].IdItem = 2;
+            pedido.ItensPedido[1].Nivel = 1;
+            pedido.ItensPedido[1].NomeProduto = "Nome Produto Test 2 UPDATED";
+            pedido.ItensPedido[1].Pontos = 88;
+            pedido.ItensPedido[1].PrecoUnitario = 88;
+            pedido.ItensPedido[1].Quantidade = 8;
+            pedido.ItensPedido[1].ValorRebate = 3;
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[2].IdPedido = 999;
+            pedido.ItensPedido[2].IdPedido = 1;
+            pedido.ItensPedido[2].IdItem = 3;
+            pedido.ItensPedido[2].Nivel = 1;
+            pedido.ItensPedido[2].NomeProduto = "Nome Produto Test 3 UPDATED";
+            pedido.ItensPedido[2].Pontos = 88;
+            pedido.ItensPedido[2].PrecoUnitario = 88;
+            pedido.ItensPedido[2].Quantidade = 8;
+            pedido.ItensPedido[2].ValorRebate = 3;
+
+            pedido.ItensPedido.Add(new ItemPedido());
+            pedido.ItensPedido[2].IdPedido = 999;
+            pedido.ItensPedido[2].IdPedido = 1;
+            pedido.ItensPedido[2].IdItem = 4;
+            pedido.ItensPedido[2].Nivel = 1;
+            pedido.ItensPedido[2].NomeProduto = "Nome Produto Test 4 UPDATED";
+            pedido.ItensPedido[2].Pontos = 77;
+            pedido.ItensPedido[2].PrecoUnitario = 77;
+            pedido.ItensPedido[2].Quantidade = 7;
+            pedido.ItensPedido[2].ValorRebate = 1;
+
+            target.Update(pedido);
+
+            Pedido pedidoTest = target.Obter("IdParceiro = " + pedido.IdParceiro + " AND IdPedido = " + pedido.IdPedido);
+
+            Assert.IsNotNull(pedidoTest);
+        }
+
+        /// <summary>
+        ///A test for Delete
+        ///</summary>
+        [TestMethod()]
+        public void DeleteTest()
+        {
+            PedidoRepository target = new PedidoRepository();
+            Pedido pedido = new Pedido();
+
+            pedido.IdPedido = 999;
+            pedido.IdParceiro = 1;
+
+            target.Delete(pedido);
+
+            Pedido pedidoTest = target.Obter("IdParceiro = " + pedido.IdParceiro + " AND IdPedido = " + pedido.IdPedido);
+
+            Assert.IsNull(pedidoTest);
+        }
+    }
+}

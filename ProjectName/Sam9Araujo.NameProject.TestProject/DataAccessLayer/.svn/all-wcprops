@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.TestProject/DataAccessLayer
+END
+DBManagerTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.TestProject/DataAccessLayer/DBManagerTest.cs
+END
+DBManagerFactoryTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cosanv2/!svn/ver/10/trunk/src/Laboris.Cosan.TestProject/DataAccessLayer/DBManagerFactoryTest.cs
+END

@@ -1,0 +1,11 @@
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.UI.Controller.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.UI.Controller.pdb
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.DataAccessLayer.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.Domain.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.Repository.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.DataAccessLayer.pdb
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.Domain.pdb
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\bin\Debug\Sam9araujo.NameProject.Repository.pdb
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\obj\Debug\ResolveAssemblyReference.cache
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\obj\Debug\Sam9araujo.NameProject.UI.Controller.dll
+C:\NameProjectV2\Projeto\NameProjectv2\trunk\src\Sam9araujo.NameProject.UI.Controller\obj\Debug\Sam9araujo.NameProject.UI.Controller.pdb

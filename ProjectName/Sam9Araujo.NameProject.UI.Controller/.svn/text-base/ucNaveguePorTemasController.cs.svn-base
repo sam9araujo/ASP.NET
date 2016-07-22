@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Domain.DTO;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository;
+
+namespace Laboris.Cosan.UI.Controller
+{
+    public sealed class ucNaveguePorTemasController : BaseController<ucNaveguePorTemasDTO>
+    {
+        public ucNaveguePorTemasController()
+        {
+
+        }
+
+        public void CarregarListaAmbientes()
+        {
+            View.Ambientes = AmbienteRepository.Instance.Listar();
+        }
+    }
+}

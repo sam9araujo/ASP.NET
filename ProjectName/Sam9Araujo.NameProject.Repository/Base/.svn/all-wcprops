@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.Repository/Base
+END
+IRepositoryBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/40/trunk/src/Laboris.Cosan.Repository/Base/IRepositoryBase.cs
+END
+BaseRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/108/trunk/src/Laboris.Cosan.Repository/Base/BaseRepository.cs
+END

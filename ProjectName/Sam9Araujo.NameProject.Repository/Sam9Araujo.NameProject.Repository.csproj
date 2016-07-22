@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B89EEBFA-CA72-4042-B60F-7E5834E7005B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laboris.Cosan.Repository</RootNamespace>
+    <AssemblyName>Laboris.Cosan.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtributoProdutoRepository.cs" />
+    <Compile Include="Base\BaseRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IRepositoryBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CategoriaRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AmbienteRepository.cs" />
+    <Compile Include="UsuarioRepository.cs" />
+    <Compile Include="DAL\UsuarioDAL.cs" />
+    <Compile Include="OrderPointsTempRepository.cs" />
+    <Compile Include="NewsletterRepository.cs" />
+    <Compile Include="ParceiroRepository.cs" />
+    <Compile Include="PedidoRepository.cs" />
+    <Compile Include="DAL\AtributoProdutoDAL.cs" />
+    <Compile Include="DAL\Base\BaseDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL\Base\IBaseDAL.cs" />
+    <Compile Include="DAL\Base\IDataAccessLayer.cs" />
+    <Compile Include="DAL\CategoriaDAL.cs" />
+    <Compile Include="DAL\OrderPointsTempDAL.cs" />
+    <Compile Include="DAL\ParceiroDAL.cs" />
+    <Compile Include="DAL\RebateDAL.cs" />
+    <Compile Include="DAL\SQL\QuerysSQL.cs" />
+    <Compile Include="DAL\AmbienteDAL.cs" />
+    <Compile Include="DAL\ImagemProdutoDAL.cs" />
+    <Compile Include="DAL\ItemPedidoDAL.cs" />
+    <Compile Include="DAL\NewsletterDAL.cs" />
+    <Compile Include="DAL\PedidoDAL.cs" />
+    <Compile Include="DAL\ProdutoDAL.cs" />
+    <Compile Include="DAL\TrackingDAL.cs" />
+    <Compile Include="ProdutoRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RebateRepository.cs" />
+    <Compile Include="TrackingRepository.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sam9Araujo.NameProject.DataAccessLayer\Sam9Araujo.NameProject.DataAccessLayer.csproj">
+      <Project>{6b2c7c9d-0de9-4faa-a305-4c4d82d754dc}</Project>
+      <Name>Sam9Araujo.NameProject.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sam9Araujo.NameProject.Domain\Sam9Araujo.NameProject.Domain.csproj">
+      <Project>{188eebe4-20f6-4e8a-8f00-0290acb86220}</Project>
+      <Name>Sam9Araujo.NameProject.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

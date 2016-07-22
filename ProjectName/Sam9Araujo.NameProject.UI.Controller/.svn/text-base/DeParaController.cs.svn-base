@@ -1,0 +1,54 @@
+﻿#region Document Header
+
+/******************************************************************************
+ * e-Commerce
+ * Copyright (C)2010 - Cosan
+ * http://www.cosan.com.br/
+ * 
+ * Desenvolvido por:
+ * Thiago Rodolfo - 18/03/2011
+ * Laboris Consultoria Ltda.
+ * http://www.laboris.com.br
+ *
+ ******************************************************************************/
+
+#endregion
+
+#region Imports
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Domain.DTO;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository;
+#endregion
+
+namespace Laboris.Cosan.UI.Controller
+{
+    public sealed class DeParaController : BaseController<DeParaDTO>
+    {
+        public DeParaController()
+        {
+            //Utilizando o construtor, existe a possibilidade de pré-carregar propriedades do DTO,
+            //como no exemplo abaixo:
+            //
+            //View.Categorias = CategoriaRepository.Instance.Listar();
+        }
+
+        public void CarregarListaAmbientes(int idParceiro)
+        {
+            View.Ambientes = AmbienteRepository.Instance.ListarPorParceiro(idParceiro);
+        }
+
+        public void CarregarListaCategorias(int idParceiro)
+        {
+            View.Categorias = CategoriaRepository.Instance.ListarPorParceiro(idParceiro);
+        }
+
+        public void CarregarListaParceiros()
+        {
+            View.Parceiros = ParceiroRepository.Instance.Listar();
+        }
+    }
+}

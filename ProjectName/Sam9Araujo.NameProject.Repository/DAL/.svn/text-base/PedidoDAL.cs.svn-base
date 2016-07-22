@@ -1,0 +1,173 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.DataAccessLayer;
+using System.Configuration;
+
+namespace Laboris.Cosan.Repository.DAL
+{
+
+    public class PedidoDAL : BaseDAL<Pedido>
+    {
+       public override string SqlSELECT
+        {
+            get { return QuerysSQL.selectPedido; }
+        }
+
+       public override string SqlINSERT
+       {
+           get { return QuerysSQL.insertPedido; }
+       }
+
+       public override string SqlUPDATE
+       {
+           get { return QuerysSQL.updatePedido; }
+       }
+
+       public override string SqlDELETE
+       {
+           get { return QuerysSQL.deletePedido; }
+       }
+
+       public override string SqlWhereKey
+       {
+           get { return QuerysSQL.whereKeyPedido; }
+       }
+
+       internal override void ExecuteIncludes(List<Pedido> pedido)
+       {
+           /*
+           if (_parceiroDAL != null)
+           {
+               for (int i = 0; i < produtos.Count; i++)
+                   produtos[i].Categoria = _parceiroDAL.Listar("idParceiro = " + produtos[i].IdParceiro)[0];
+           }
+           */
+       }
+
+       internal override IDbDataParameter[] PrepareParametersFactory(Pedido pedido, bool includeKeys = false)
+       {
+           IDbDataParameter[] dataParameters;
+
+           if (includeKeys)
+               dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 15);
+           else
+               dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 13);
+           
+           dataParameters[0].ParameterName = "idPedido";
+           dataParameters[0].DbType = DbType.Int32;
+           dataParameters[0].Value = pedido.IdPedido;
+
+           dataParameters[1].ParameterName = "idParceiro";
+           dataParameters[1].DbType = DbType.Int32;
+           dataParameters[1].Value = pedido.IdParceiro;
+
+           dataParameters[2].ParameterName = "data";
+           dataParameters[2].DbType = DbType.DateTime;
+           dataParameters[2].Value = pedido.Data;
+
+           dataParameters[3].ParameterName = "status";
+           dataParameters[3].DbType = DbType.String;
+           dataParameters[3].Value = pedido.Status;
+
+           dataParameters[4].ParameterName = "nome";
+           dataParameters[4].DbType = DbType.String;
+           dataParameters[4].Value = pedido.Nome;
+
+           dataParameters[5].ParameterName = "formaPagamento";
+           dataParameters[5].DbType = DbType.String;
+           dataParameters[5].Value = pedido.FormaPagamento;
+
+           dataParameters[6].ParameterName = "endereco";
+           dataParameters[6].DbType = DbType.String;
+           dataParameters[6].Value = pedido.Endereco;
+
+           dataParameters[7].ParameterName = "bairro";
+           dataParameters[7].DbType = DbType.String;
+           dataParameters[7].Value = pedido.Bairro;
+
+           dataParameters[8].ParameterName = "cidade";
+           dataParameters[8].DbType = DbType.String;
+           dataParameters[8].Value = pedido.Cidade;
+
+           dataParameters[9].ParameterName = "uf";
+           dataParameters[9].DbType = DbType.String;
+           dataParameters[9].Value = pedido.UF;
+
+           dataParameters[10].ParameterName = "cep";
+           dataParameters[10].DbType = DbType.String;
+           dataParameters[10].Value = pedido.CEP;
+
+           dataParameters[11].ParameterName = "cpfCnpj";
+           dataParameters[11].DbType = DbType.String;
+           dataParameters[11].Value = pedido.CPFCNPJ;
+
+           dataParameters[12].ParameterName = "frete";
+           dataParameters[12].DbType = DbType.Decimal;
+           dataParameters[12].Value = pedido.Frete;
+
+           if (includeKeys)
+           {
+               int i = 13;
+               keyMethod(pedido, dataParameters, i);
+           }
+
+           return dataParameters;
+       }
+
+       private static void keyMethod(Pedido pedido, IDbDataParameter[] dataParameters, int i)
+       {
+           dataParameters[i].ParameterName = "idPedidoKey";
+           dataParameters[i].DbType = DbType.Int32;
+           dataParameters[i].Value = pedido.IdPedido;
+
+           i++;
+
+           dataParameters[i].ParameterName = "idParceiroKey";
+           dataParameters[i].DbType = DbType.Int32;
+           dataParameters[i].Value = pedido.IdParceiro;
+       }
+
+       internal override IDbDataParameter[] PrepareParametersKeyFactory(Pedido pedido)
+       {
+           IDbDataParameter[] dataParameters = DBManagerFactory.GetParameters(DataProvider.SqlServer, 2);
+
+           int i = 0;
+
+           keyMethod(pedido, dataParameters, i);
+
+           return dataParameters;
+       }
+
+       public PedidoDAL()
+        {
+
+        }
+
+        public override Pedido Factory(IDataReader DataReader)
+        {
+            Pedido pedido = new Pedido();
+            {
+                pedido.IdPedido = int.Parse(DataReader["idPedido"].ToString());
+                pedido.IdParceiro = int.Parse(DataReader["idParceiro"].ToString());
+                pedido.Data = DateTime.Parse(DataReader["data"].ToString());
+                pedido.Status = DataReader["status"].ToString();
+                pedido.Nome = DataReader["nome"].ToString();
+                pedido.FormaPagamento = DataReader["formaPagamento"].ToString();
+                pedido.Endereco = DataReader["endereco"].ToString();
+                pedido.Bairro = DataReader["bairro"].ToString();
+                pedido.Cidade = DataReader["cidade"].ToString();
+                pedido.UF = DataReader["uf"].ToString();
+                pedido.CEP = DataReader["cep"].ToString();
+                pedido.CPFCNPJ = DataReader["cpfCnpj"].ToString();
+                pedido.Frete = float.Parse(DataReader["frete"].ToString());
+            }
+            return pedido;
+        }
+
+        //public Pedido pedido { get; set; }
+    }
+}

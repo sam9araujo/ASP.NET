@@ -1,0 +1,113 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Laboris.Cosan.Repository.DAL;
+using Laboris.Cosan.Domain;
+
+namespace Laboris.Cosan.Repository
+{
+    public class BaseRepository<TDomain, TDAL, TRepository>
+                                                            where TDomain : IDomain
+                                                            where TDAL : IBaseDAL<TDomain>
+                                                            where TRepository : IRepositoryBase
+                                                            
+                                                            
+    {
+        public static TRepository Instance
+        {
+            get { return Singleton<TRepository>.Instance; }
+        }
+
+        internal static TDAL DAL
+        {
+            get { return Singleton<TDAL>.Instance; }
+        }
+
+        #region Métodos Básicos
+        public virtual TDomain Obter(string where)
+        {
+            return DAL.Obter(where);
+        }
+
+        public virtual IList<TDomain> Listar()
+        {
+            return DAL.Listar();
+        }
+
+        public virtual IList<TDomain> Listar(string where)
+        {
+            return DAL.Listar(where);
+        }
+
+        public virtual int Delete(TDomain entity)
+        {
+            return DAL.Delete(entity);
+        }
+
+        public virtual int Delete(string where)
+        {
+            return DAL.Delete(where);
+        }
+
+        public virtual int Update(TDomain entity)
+        {
+            return DAL.Update(entity);
+        }
+
+        public virtual int Update(string where)
+        {
+            return DAL.Update(where);
+        }
+
+        public virtual int Insert(TDomain entity)
+        {
+            return DAL.Insert(entity);
+        }
+
+        internal virtual IList<TDomain> ListarPagina(string sqlSelect, string sqlOrderBy, int start, int size, ref int totalRecords)
+        {
+            IList<TDomain> listDomain;
+
+            IDbDataParameter[] dataParameters = DAL.GetParameters(5);
+
+            dataParameters[0].ParameterName = QuerysSQL.spPaginacao.Parameters.rowsCount.name;
+            dataParameters[0].DbType = QuerysSQL.spPaginacao.Parameters.rowsCount.type;
+            dataParameters[0].Direction = ParameterDirection.Output;
+
+            dataParameters[1].ParameterName = QuerysSQL.spPaginacao.Parameters.sqlSelect.name;
+            dataParameters[1].DbType = QuerysSQL.spPaginacao.Parameters.sqlSelect.type;
+            dataParameters[1].Value = sqlSelect;
+
+            dataParameters[2].ParameterName = QuerysSQL.spPaginacao.Parameters.orderBy.name;
+            dataParameters[2].DbType = QuerysSQL.spPaginacao.Parameters.orderBy.type;
+            dataParameters[2].Value = sqlOrderBy;
+
+            dataParameters[3].ParameterName = QuerysSQL.spPaginacao.Parameters.start.name;
+            dataParameters[3].DbType = QuerysSQL.spPaginacao.Parameters.start.type;
+            dataParameters[3].Value = start;
+
+            dataParameters[4].ParameterName = QuerysSQL.spPaginacao.Parameters.size.name;
+            dataParameters[4].DbType = QuerysSQL.spPaginacao.Parameters.size.type;
+            dataParameters[4].Value = size;
+
+            listDomain = DAL.QueryExecute(QuerysSQL.spPaginacao.nameSp, CommandType.StoredProcedure, dataParameters);
+
+            totalRecords = Convert.ToInt32(dataParameters[0].Value);
+
+            return listDomain;
+        }
+
+        #endregion
+    }
+
+    internal class Singleton<T>
+    {
+        private static readonly Lazy<T> lazy = new Lazy<T>(() => Activator.CreateInstance<T>());
+        public static T Instance
+        {
+            get { return lazy.Value; }
+        }    
+    }
+}

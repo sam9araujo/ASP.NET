@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Repository;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository.DAL;
+
+namespace Laboris.Cosan.Repository
+{
+    public static class Utils
+    {
+        public static void listarParceiro(Produto produto)
+        {
+           ParceiroDAL parceiro = new ParceiroDAL();
+           produto.Parceiro = parceiro.Obter("idParceiro = " + produto.IdParceiro);
+        }
+    }
+}

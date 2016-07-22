@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Domain.DTO;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository;
+
+namespace Laboris.Cosan.UI.Controller
+{
+    public sealed class ucNossosParceirosController : BaseController<ParceirosListaDTO>
+    {
+        public ucNossosParceirosController()
+        {
+        }
+
+        public void CarregarListaParceiros()
+        {
+            View.Parceiros = ParceiroRepository.Instance.Listar();
+        }
+    }
+}

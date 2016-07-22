@@ -1,0 +1,119 @@
+#region Document Header
+
+/******************************************************************************
+ * e-Commerce - Versão 2
+ * Copyright (C)2011 - Cosan
+ * http://www.cosan.com.br/
+ * 
+ * Desenvolvido por:
+ * Bruno D'Alessio - 01/02/2011
+ * Laboris Consultoria Ltda.
+ * http://www.laboris.com.br
+ *
+ ******************************************************************************/
+
+#endregion
+
+#region Imports
+using System;
+#endregion
+
+namespace Laboris.Cosan.Domain
+{
+    /// <summary>
+    /// Classe da entidade ImagemProduto
+    /// </summary>
+    public class ImagemProduto : BaseDomain<int>
+    {
+        #region Fields
+
+        private int _idImagem;
+        private string _imagem;
+        private DateTime _dataCadastro;
+        private int _idParceiro;
+        private int _idProduto;
+
+        #endregion
+
+        #region References
+
+        private Produto _produto;
+
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Grava e recupera o IdImagem
+        /// </summary>
+        public virtual int IdImagem
+        {
+            get { return _idImagem; }
+            set { _idImagem = value; }
+        }
+
+        /// <summary>
+        /// Grava e recupera o Imagem do Pedido
+        /// </summary>
+        public virtual string Imagem
+        {
+            get { return this._imagem; }
+            set { this._imagem = value; }
+        }
+
+        /// <summary>
+        /// Grava e recupera a Produto
+        /// </summary>
+        public virtual Produto Produto
+        {
+            get { return this._produto; }
+            set { this._produto = value; }
+        }
+
+        /// <summary>
+        /// Grava e recupera a Data de Cadastro
+        /// </summary>
+        public virtual DateTime DataCadastro
+        {
+            get { return this._dataCadastro; }
+            set { this._dataCadastro = value; }
+        }
+
+        /// <summary>
+        /// Grava e recupera o IdParceiro
+        /// </summary>
+        public virtual int IdParceiro
+        {
+            get { return _idParceiro; }
+            set { _idParceiro = value; }
+        }
+
+        /// <summary>
+        /// Grava e recupera o IdProduto
+        /// </summary>
+        public virtual int IdProduto
+        {
+            get { return _idProduto; }
+            set { _idProduto = value; }
+        }
+
+        #endregion
+
+        #region Override Methods
+        /// <summary>
+        /// Hash code das informações da entidade
+        /// </summary>
+        /// <returns>Hash code</returns>
+        public override int GetHashCode()
+        {
+            return (this.GetType().FullName +
+                    this.IdImagem  +
+                    this.Produto.IdProduto +
+                    this.IdParceiro +
+                    this.Produto.Parceiro.Nome +
+                    this.Imagem +
+                    this.DataCadastro).GetHashCode();
+        }
+        #endregion
+    }
+}

@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Laboris.Cosan.Domain.DTO
+{
+    public class BuscaDTO : BaseDTO
+    {
+        private Produto _produto;
+        private ImagemProduto _imagemProduto;
+
+        private IList<Produto> _produtos;
+        private IList<ImagemProduto> _imagensProdutos;
+
+        public IList<Produto> Produtos
+        {
+            get { return _produtos; }
+            set { _produtos = value; }
+        }
+        public IList<ImagemProduto> ImagemProduto
+        {
+            get { return _imagensProdutos; }
+            set { _imagensProdutos = value; }
+        }
+        public Produto Produto
+        {
+            get { return _produto; }
+            set { _produto = value; }
+        }
+        //public ImagemProduto ImagemProduto
+        //{
+        //    get { return _imagemProduto; }
+        //    set { _imagemProduto = value; }
+        //}
+
+    }
+}

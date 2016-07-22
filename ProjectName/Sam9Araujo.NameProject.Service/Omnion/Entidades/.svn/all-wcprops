@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service/Omnion/Entidades
+END
+UsuarioPedido.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/UsuarioPedido.cs
+END
+Saldo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/Saldo.cs
+END
+Pedido.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/Pedido.cs
+END
+UsuarioProduto.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/UsuarioProduto.cs
+END
+ProdutoBag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/ProdutoBag.cs
+END
+Login.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/Login.cs
+END
+Troca.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cosanv2/!svn/ver/131/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/Troca.cs
+END
+Cancelamento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cosanv2/!svn/ver/107/trunk/src/Laboris.Cosan.Service/Omnion/Entidades/Cancelamento.cs
+END

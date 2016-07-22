@@ -1,0 +1,49 @@
+﻿#region Document Header
+
+/******************************************************************************
+ * e-Commerce
+ * Copyright (C)2010 - Cosan
+ * http://www.cosan.com.br/
+ * 
+ * Desenvolvido por:
+ * Thiago Rodolfo - 02/04/2011
+ * Laboris Consultoria Ltda.
+ * http://www.laboris.com.br
+ *
+ ******************************************************************************/
+
+#endregion
+
+#region Imports
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+#endregion
+
+namespace Laboris.Cosan.Domain.DTO
+{
+    public class UsuarioDTO : BaseDTO
+    {
+        #region Fields
+        private Usuario _usuario;
+        private IList<Usuario> _usuarios;
+        #endregion
+
+        #region Properties
+
+        public Usuario Usuario
+        {
+            get { return _usuario; }
+            set { _usuario = value; }
+        }
+
+        public IList<Usuario> Usuarios
+        {
+            get { return _usuarios; }
+            set { _usuarios = value; }
+        }
+       
+        #endregion
+    }
+}

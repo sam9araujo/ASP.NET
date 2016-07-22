@@ -1,0 +1,81 @@
+﻿using System;
+using System.Configuration;
+
+#region Enum
+/// <summary>
+/// Enum com todos os possíveis nomes para informações no AppSettings
+/// </summary>
+public enum AppSettingsObjectOption
+{
+    AuthWebConfig,
+    /// <summary>
+    /// URL do WebService de Login
+    /// </summary>
+    OmnionLoginURL,
+    /// <summary>
+    /// URL do WebService de Saldo de Pontos
+    /// </summary>
+    OmnionSaldoURL,
+    /// <summary>
+    /// URL do WebService de Troca de pontos
+    /// </summary>
+    OmnionPedidoURL,
+    /// <summary>
+    /// URL do WebService de Cancelamento de Pedido
+    /// </summary>
+    OmnionCancelamentoURL,
+    /// <summary>
+    /// Chave para uso da API do Google Maps 'http://code.google.com/apis/maps/'
+    /// </summary>
+    GoogleMapsAPIKey,
+    /// <summary>
+    /// Servidor de envio de mensagens
+    /// </summary>
+    ServidorSMTP
+}
+#endregion
+
+namespace Laboris.Cosan.Service
+{
+    /// <summary>
+    /// Classe para manipulação do AppSettings
+    /// </summary>
+    public sealed class AppSettingsObject : OmnionClass
+    {
+        #region Singleton
+        private static readonly AppSettingsObject _instance = new AppSettingsObject();
+
+        /// <summary>
+        /// Instância do objeto singleton
+        /// </summary>
+        public static AppSettingsObject Instance
+        {
+            get { return _instance; }
+        }
+
+        /// <summary>
+        /// Construtor privado do Singleton, inicia _type com o tipo de AppSettingsObjectOptions
+        /// </summary>
+        private AppSettingsObject()
+        {
+            this._type = typeof(AppSettingsObjectOption);
+        }
+        #endregion
+
+        #region Fields
+        private Type _type;
+        #endregion
+
+        #region Properties
+        /// <summary>
+        /// Recupera informações no AppSettings
+        /// </summary>
+        /// <param name="name">Enum com os nomes para informações no AppSettings</param>
+        /// <returns>Informação no AppSettings sob tal nome</returns>
+        public string this[AppSettingsObjectOption name]
+        {
+            get { return ConfigurationManager.AppSettings[Enum.GetName(this._type, name)]; }
+        }
+        #endregion
+    }
+}

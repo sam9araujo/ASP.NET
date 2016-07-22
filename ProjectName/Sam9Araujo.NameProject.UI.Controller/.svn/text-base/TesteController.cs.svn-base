@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Laboris.Cosan.Domain.DTO;
+using Laboris.Cosan.Domain;
+using Laboris.Cosan.Repository;
+
+namespace Laboris.Cosan.UI.Controller
+{
+    public sealed class TesteController : BaseController<TesteDTO>
+    {
+        public TesteController()
+        {
+            //Utilizando o construtor, existe a possibilidade de pré-carregar propriedades do DTO,
+            //como no exemplo abaixo:
+            //
+            //View.Categorias = CategoriaRepository.Instance.Listar();
+        }
+
+        public void CarregarListaAmbientes()
+        {
+            View.Ambientes = AmbienteRepository.Instance.Listar();
+        }
+
+        public void CarregarCategoriasPorAmbiente(int idAmbiente)
+        {
+            View.Categorias = CategoriaRepository.Instance.ListarPorAmbiente(idAmbiente);
+        }
+
+    }
+}

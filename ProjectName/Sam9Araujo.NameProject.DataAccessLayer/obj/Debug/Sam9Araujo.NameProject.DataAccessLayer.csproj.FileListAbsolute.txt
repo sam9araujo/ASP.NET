@@ -1,0 +1,12 @@
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.Domain.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\bin\Debug\Laboris.Cosan.Domain.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\obj\Debug\Sam9Araujo.NameProject.DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\obj\Debug\Laboris.Cosan.DataAccessLayer.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Laboris.Cosan.DataAccessLayer\obj\Debug\Laboris.Cosan.DataAccessLayer.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.DataAccessLayer\bin\Debug\Laboris.Cosan.DataAccessLayer.pdb
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.DataAccessLayer\obj\Debug\Sam9Araujo.NameProject.DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.DataAccessLayer\obj\Debug\Laboris.Cosan.DataAccessLayer.dll
+E:\WorkSpace\cosanv2\cosanv2\trunk\src\Sam9Araujo.NameProject.DataAccessLayer\obj\Debug\Laboris.Cosan.DataAccessLayer.pdb

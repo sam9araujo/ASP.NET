@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 59
+*.log
+Laboris.Cosan.Service.WebService.csproj.user
+bin
+obj
+
+END

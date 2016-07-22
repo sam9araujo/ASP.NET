@@ -1,0 +1,225 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Portal.master.cs" Inherits="Laboris.Cosan.UI.ViewWeb.Portal" ViewStateMode="Disabled"%>
+
+<%@ Register Src="Controls/Login.ascx" TagName="Login" TagPrefix="uc1" %>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="pt-br" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="pt-br" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="pt-br" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="pt-br" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="pt-br" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="resource-type" content="document" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection" />
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+    <script type="text/javascript">        !window.jQuery && document.write(unescape('%3Cscript src="js/in/jquery.js"%3E%3C/script%3E')) </script>
+    <script type="text/javascript" src="js/in/json2.js"></script>
+    <script type="text/javascript" src="js/in/modernizr.js"></script>
+    <script type="text/javascript" src="js/in/ie-css3.js"></script>
+    <script type="text/javascript" src="js/in/slideshow.js"></script>
+    <script type="text/javascript" src="js/in/ui.js"></script>
+    <script type="text/javascript" src="js/in/cmng.js"></script>
+    <script type="text/javascript" src="js/in/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="js/in/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="js/in/slidePaging.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/mfav.js"></script>
+    <%--<script src="_js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="_js/jquery.maskedinput-1.2.2.js" type="text/javascript"></script>
+    <script src="_js/jquery.price_format.1.3.js" type="text/javascript"></script>--%>
+
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Shopping Pontos</title>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="topo">
+        <div class="in">
+            <a href="default.aspx">
+                <img src="img/logotopo.png" alt="" /></a>
+            <div id="login">
+                <asp:Panel ID="PanelNotLoged" runat="server">
+                    <p>Área restrita</p>
+                    <div>
+                        <asp:TextBox ID="txtCpf" runat="server" CssClass="cpf" />
+                        <asp:TextBox ID="txtSenha" runat="server" CssClass="senha" TextMode="Password" />
+                        <asp:ImageButton ID="btLogin" ImageUrl="~/img/ok.png" runat="server" OnClick="btLogin_Click" />
+                    </div>
+                    <div>
+                        <a href="http://www.programapontos.com.br/cadastro-etapa-01.asp"><img src="img/cadastrese.png" alt=""/></a>
+                        &nbsp;<a class="txtEsqueci" href="http://www.programapontos.com.br/esqueci_senha.asp">Esqueci minha senha</a></div>
+                </asp:Panel>
+                <asp:Panel ID="PanelLoged" runat="server" Visible="False">
+                    <br />
+                    <p runat="server" id="msgLogin"></p>
+                    <%--<p>
+                        <asp:LinkButton ID="linkLogout" runat="server" OnClick="linkLogout_Click">Sair</asp:LinkButton></p>--%>
+                </asp:Panel>
+            </div>
+            <ul>
+                <%--<li class="home"><a href="Default.aspx">Home</a></li>--%>
+                <li class="menu"><a href="#">Menu</a>
+                    <div>
+                        <ul>
+                            <li><a href="http://www.programapontos.com.br/">Programa Pontos</a></li>
+                            <li><a href="http://www.redeesso.com.br">Portal Rede Esso</a></li>
+                            <li><a href="ComoComprar.aspx">Como Comprar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="menuMeusPedidos" runat="server" visible="false"><a href="meuspedidos.aspx">Meus
+                    pedidos</a> </li>
+                <li>
+                    <asp:LinkButton ID="linkLogout" runat="server" OnClick="linkLogout_Click" Visible="false">Sair</asp:LinkButton></li>
+            </ul>
+            <a href="#">
+                <img src="img/esso.png" alt="" /></a>
+        </div><p></p>
+        <div id="litSaudacaoCSS">
+            <asp:Literal ID="LITSaudacao" runat="server">bem-vindo ao Shopping Pontos! Fique a vontade e visite os ambientes abaixo.</asp:Literal>
+       <p></p>
+        </div>
+    </div>
+    <div id="slide" runat="server">
+        <div class="in">
+            <div class="hid">
+                <div id="um">
+                    <img src="img/slide/01.png" alt="" />
+                </div>
+                <div id="dois1">
+                    <div>
+                        <img src="img/slide/demo.png" />
+                        <div>
+                            <h1>
+                                Navegador GPS Garmin Nuvi 1200</h1>
+                            <ul>
+                                <li>- Guia Quatro Rodas</li>
+                                <li>- Navegação por foto</li>
+                                <li>- Ecoroute</li>
+                                <li>- Personalização</li>
+                            </ul>
+                            <p>
+                                por</p>
+                            <span>R$ 350,00</span> <a href="http://loja.autoguiagps.com.br/esso.aspx?Login=generico&token=f78be9eb051a8a009121dd79c16b655e&IdProductSale=7">
+                                <img src="img/slide/pontos.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <%--<div>
+                        <img src="img/slide/demo.png" />
+                        <div>
+                            <h1>
+                                Navegador GPS Garmin Nuvi 1200</h1>
+                            <ul>
+                                <li>- Guia Quatro Rodas</li>
+                                <li>- Navegação por foto</li>
+                                <li>- Ecoroute</li>
+                                <li>- Personalização</li>
+                            </ul>
+                            <p>
+                                por</p>
+                            <span>R$ 449,00</span> <a href="#">
+                                <img src="img/slide/pontos.png" alt="" /></a>
+                        </div>
+                    </div>--%>
+                </div>
+                <div id="tres">
+                    <div>
+                        <img src="img/slide/03.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="img/slide/03.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="img/slide/03.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="fechado">
+                <span>abrir</span> Novidades em destaque <span>abrir</span>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <asp:ContentPlaceHolder ID="Content" runat="server">
+    </asp:ContentPlaceHolder>
+    <div id="rodape">
+        <div class="in">
+            <span>Quem acumula pontos ganha descontos.</span>
+            <div id="menuroda">
+                <div>
+                    <h1>
+                        Menu</h1>
+                    <ul>
+                        <li><a href="http://www.programapontos.com.br/">Programa Pontos</a></li>
+                        <li><a href="http://www.redeesso.com.br/">Portal Rede Esso</a></li>
+                        <%--<li><a href="meuspedidos.aspx">Meus Pedidos</a></li>--%>
+                        <li><a href="ComoComprar.aspx">Como Comprar</a></li>
+                        <li><a href="http://www.programapontos.com.br/participe.asp">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1> 
+                        Institucional</h1>
+                    <ul>
+                        <li><a href="http://www.programapontos.com.br/como-participar.asp">O que é o programa</a></li>
+                        <li><a href="http://www.programapontos.com.br/regulamento.asp">Regulamento</a></li>
+                        <li><a href="MapadoSite.aspx">Mapa do site</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>
+                        Atendimento</h1>
+                    <ul>
+                        <li><a href="http://www.programapontos.com.br/contato.asp">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>
+                        Formas de pagamento</h1>
+                    <img src="img/cartoes.png" alt="" />
+                </div>
+                <div>
+                    <h1>
+                        Site do Grupo</h1>
+                    <a href="http://www.cosan.com.br/cosan2009/web/default_pti.asp?idioma=0&conta=45">
+                        <img src="img/cosan.png" alt="" /></a>
+                </div>
+                <div>
+                    <h1>
+                        Powered by</h1>
+                    <a href="http://www.laboris.com.br/">
+                        <img src="img/laboris.png" alt="" /></a>
+                </div>
+                <div>
+                    <h1>
+                        SAC</h1>
+                    <p>
+                        Capitais e Regiões<br />
+                        Metropolitanas<br />
+                        <strong>4003 2490</strong></p>
+                    <p>
+                        Demais Regiões<br />
+                        <strong>0800 887 2490</strong></p>
+                </div>
+            </div>
+            <div id="credito">
+                <img src="img/logoroda.png" alt="" />
+                © 2010-2011. Todos os direitos reservados.
+                <img class="imgEsso" src="img/essoroda.png" alt="" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
